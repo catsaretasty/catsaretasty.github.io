@@ -1,14 +1,8 @@
 {
-  "order": [
-    "user",
-    "rdj",
-    "bouncer",
-    "manager"
-  ],
   "bouncer": [{
-    "args": "fdsafsdafasdfsdafasdfhasdfasdjkfhasdkasdfasdfasdfasdffjklasd;fjlasdjfkl;asdfsdfasdfasdfasdfasd",
+    "args": "none",
     "command": "motd",
-    "desc": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafasdfasdfasdfdasaafasdfsdafdasfasdfaaae"
+    "desc": "none"
   }, {
     "args": "none",
     "command": "lock",
@@ -327,6 +321,7 @@
     "command": "dice",
     "desc": "none"
   }],
+  "order": ["user", "rdj", "bouncer", "manager"],
   "rdj": [{
     "args": "none",
     "command": "op",
