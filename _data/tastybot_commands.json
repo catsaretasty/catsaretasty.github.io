@@ -428,9 +428,9 @@
     "desc": "none"
   }],
   "user": [{
-    "args": "none",
+    "args": "letter or word",
     "command": "guess",
-    "desc": "none"
+    "desc": "Guess a letter or answer for hangman games."
   }, {
     "args": "none",
     "command": "theme",

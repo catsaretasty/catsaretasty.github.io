@@ -1,5 +1,4 @@
 ---
-layout: rdj
 title: Volant
 author: volant
 soundcloud: VolantMusic

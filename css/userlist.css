@@ -1,0 +1,25 @@
+#list, #title, #tagline {
+    text-align:center;
+}
+
+img.face {
+    max-width: 250px;
+    /*max-height: 250px;*/
+}
+
+img.rdj-logo {
+    max-width: 200px;
+    background-color: #222;
+}
+
+.name {
+    text-align: center;
+}
+
+.user{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration:none;
+    color:inherit;
+}

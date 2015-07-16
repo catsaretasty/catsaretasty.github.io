@@ -1,5 +1,4 @@
 ---
-layout: rdj
 title: Pandasian
 author: pandasian
 soundcloud: pandasian

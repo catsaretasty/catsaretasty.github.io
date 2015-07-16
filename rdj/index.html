@@ -1,16 +1,16 @@
 ---
-layout: rdjs
+layout: userlist
 title: Resident DJs
 ---
 <section class="header">
-    <h2 id="rdjtitle">Resident DJs</h2>
-    <p id="rdjtagline">A group of individuals that have impressed the Tastycat room with their music and continue to do so.</p>
+    <h2 id="title">Resident DJs</h2>
+    <p id="tagline">A group of individuals that have impressed the Tastycat room with their music and continue to do so.</p>
 </section>
 
-<div id="rdjlist">
+<div id="list">
     {% for rdj in site.collections.rdjs.docs %}
 
-        <a class="rdj" href="{{ rdj.url }}">
+        <a class="user" href="{{ rdj.url }}">
             {% comment %} See if the rdj's custom image exists{% endcomment %}
             {% for static_file in site.static_files %}
             {% capture image_url %}/images/rdj/{{ rdj.author }}.png{% endcapture %}
@@ -20,9 +20,9 @@ title: Resident DJs
             {% endfor %}
 
             {% if customimage %}
-            <img id='rdj-logo' src="{{ image_url }}" href="{{ rdj.url }}"/>
+            <img class="rdj-logo" src="{{ image_url }}" href="{{ rdj.url }}"/>
             {% else %}
-            <img id='rdj-logo' src="/images/rdj/default.png" href="{{ rdj.url }}"/>
+            <img class="rdj-logo" src="/images/rdj/default.png" href="{{ rdj.url }}"/>
             {% endif %}
             {% assign customimage = false %}
             <h3 class="name">{{ rdj.title }}</h3>

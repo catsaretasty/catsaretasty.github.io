@@ -6,13 +6,21 @@ collections:
   rdjs:
     output: true
     permalink: /rdj/:path/
+  staff:
+      output: true
+      permalink: /staff/:path/
 
 defaults:
   - scope:
       path: ""
       type: rdjs
     values:
-      layout: rdj
+      layout: bio-rdj
+  - scope:
+      path: ""
+      type: staff
+    values:
+      layout: bio-staff
 
 gems:
   - jekyll-sitemap

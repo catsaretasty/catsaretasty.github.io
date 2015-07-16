@@ -7,24 +7,15 @@
 {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-<!-- Mobile Specific Metas
-–––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Mobile Specific Metas -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- FONT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ "/css/skeleton.css" | prepend: site.baseurl }}" type="text/css">
 <link rel="stylesheet" href="{{ "/css/normalize.css" | prepend: site.baseurl }}" type="text/css">
-<!--<link rel="stylesheet" href="{{ "/css/tastycat.css" | prepend: site.baseurl }}" type="text/css">-->
-
-
 
 <!-- Fonts -->
-
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
 <!-- Open Graph -->
 <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
