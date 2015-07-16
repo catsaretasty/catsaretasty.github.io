@@ -4,7 +4,6 @@
 
 img.face {
     max-width: 250px;
-    /*max-height: 250px;*/
 }
 
 img.rdj-logo {
@@ -24,10 +23,12 @@ img.rdj-logo {
     color:inherit;
 }
 
-@media
-only screen and (max-width: 1000px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-    .header {
-        margin-top: 5rem;
+@media (max-width: 550px) {
+    .user {
+        margin-bottom:1rem;
+        border-bottom:1px solid #ddd;
     }
 }
+
+
+

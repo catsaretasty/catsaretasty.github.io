@@ -26,8 +26,8 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.header {
-    margin-top: 15rem;
+.jumbotron {
+    margin-top: 5rem;
     text-align: center;
     margin-bottom: 5rem;
 }
@@ -604,7 +604,11 @@ there.
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
+    .jumbotron {
+        margin-top: 15rem;
+    }
+
 }
 
 /* Larger than Desktop HD */
