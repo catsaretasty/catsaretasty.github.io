@@ -1,0 +1,18 @@
+timezone: UTC
+encoding: utf-8
+title: Tastycat
+
+collections:
+  rdjs:
+    output: true
+    permalink: /rdj/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: rdjs
+    values:
+      layout: rdj
+
+gems:
+  - jekyll-sitemap

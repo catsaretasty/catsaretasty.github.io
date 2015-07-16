@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ "/css/tastybot.css" | prepend: site.baseurl }}" type="text/css">
+</head>
+<body>
+{% include header.html %}
+
+<div class="container">
+    {{ content }}
+</div>
+
+{% include footer.html %}
+</body>
+</html>

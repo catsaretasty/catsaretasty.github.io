@@ -1,0 +1,30 @@
+---
+layout: rdjs
+title: Resident DJs
+---
+<section class="header">
+    <h2 id="rdjtitle">Resident DJs</h2>
+    <p id="rdjtagline">A group of individuals that have impressed the Tastycat room with their music and continue to do so.</p>
+</section>
+
+<div id="rdjlist">
+    {% for rdj in site.collections.rdjs.docs %}
+        <div class="rdj">
+            {% comment %} See if the rdj's custom image exists{% endcomment %}
+            {% for static_file in site.static_files %}
+            {% capture image_url %}/images/rdj/{{ rdj.author }}.png{% endcapture %}
+            {% if static_file.path == image_url %}
+            {% assign customimage = true %}
+            {% endif %}
+            {% endfor %}
+
+            {% if customimage %}
+            <img id='rdj-logo' src="{{ image_url }}" href="{{ rdj.url }}"/>
+            {% else %}
+            <img id='rdj-logo' src="/images/rdj/default.png" href="{{ rdj.url }}"/>
+            {% endif %}
+            {% assign customimage = false %}
+            <h3 class="name">{{ rdj.title }}</h3>
+        </div>
+    {% endfor %}
+</div>

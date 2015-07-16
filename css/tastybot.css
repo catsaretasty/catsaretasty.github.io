@@ -1,0 +1,94 @@
+.header {
+    margin-top: 15rem;
+    text-align:center;
+    margin-bottom:5rem;
+}
+
+.role {
+    text-align:center;
+}
+
+td {
+    position: relative;
+    overflow:hidden;
+    overflow-wrap: break-word;
+    /*text-overflow: ellipsis;*/
+}
+
+/*.zebra-striped tbody tr:nth-child(odd) td,
+.zebra-striped tbody tr:nth-child(odd) th {
+    background: #f5f5f5;
+}*/
+
+p {
+    text-align:center;
+}
+
+td:nth-of-type(1) { min-width: 12rem }
+td:nth-of-type(2) { max-width: 20rem }
+td:nth-of-type(3) { max-width: 30rem }
+
+@media
+only screen and (max-width: 1000px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+
+    }
+
+    .header {
+        margin-top: 5rem;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /*tr { border-top: 1px solid #ccc; }*/
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 25%;
+    }
+
+    td:last-child {
+        border-bottom: 1px solid #bbb;
+    }
+
+    td:nth-of-type(1) { max-width: none }
+    td:nth-of-type(2) { max-width: none }
+    td:nth-of-type(3) { max-width: none }
+
+    th:first-child, td:first-child {
+        padding-left: 25%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        left:10px;
+        width: 25%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before { content: "Command"; }
+    td:nth-of-type(2):before { content: "Arguments"; }
+    td:nth-of-type(3):before { content: "Description"; }
+}

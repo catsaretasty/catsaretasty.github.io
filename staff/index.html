@@ -1,0 +1,39 @@
+---
+layout: default
+title: Staff
+categories: []
+tags: []
+status: publish
+type: page
+published: true
+meta: {}
+---
+<section class="header">
+<h2 id="stafftitle">We are Tastycat</h2>
+<p id="stafftagline">We're volunteers that manage the chat / events / everything related to the community.   Our team consists of the some older plug.dj users as well as the new faces  that we've accepted to help make the Tastycat community a better place for anyone!</p>
+</section>
+
+<div id="stafflist">
+{% for userinfo in site.data.users %}
+    {% assign user = userinfo[0] %}
+    {% assign bio = userinfo[1] %}
+    <div class="staff">
+        {% comment %} See if the user's custom image exists{% endcomment %}
+        {% for static_file in site.static_files %}
+            {% capture image_url %}/images/staff/{{ user }}.jpg{% endcapture %}
+            {% if static_file.path == image_url %}
+                {% assign customimage = true %}
+            {% endif %}
+        {% endfor %}
+        {% if customimage %}
+                <img src="/images/staff/{{ user }}.jpg"/>
+        {% else %}
+            <img src="/images/staff/default.jpg"/>
+        {% endif %}
+        {% assign customimage = false %}
+        <h3 class="name">{{ bio.name }}</h3>
+        <p class="tagline">{{ bio.tagline }}</p>
+    </div>
+
+{% endfor %}
+</div>

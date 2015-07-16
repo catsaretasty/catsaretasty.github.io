@@ -1,0 +1,32 @@
+---
+layout: tastybot
+title: Tastybot
+---
+<section class="header">
+    <h2>Tastybot</h2>
+    <p>Here's a list of Tastybot's commands.  We try to update this list as commands change, but it's not always possible.  Ask staff for help concerning commands!</p>
+</section>
+
+{% for role in site.data.tastybot_commands.order %}{% if role %}
+{% assign commands = site.data.tastybot_commands[role] %}
+<h2 class="role">{{role}} commands</h2>
+<table class="zebra-striped u-full-width {{role}}">
+    <thead>
+        <tr>
+            <th>Command</th>
+            <th>Arguments</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for command in commands %}
+        <tr id="{{command.command}}">
+            <td>{{command.command}}</td>
+            <td>{{command.args}}</td>
+            <td>{{command.desc}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}{% endfor %}
+<p>©2014-{{ site.time | date: '%y' }} Fungus (Olivier Houle).</p>
