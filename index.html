@@ -19,7 +19,7 @@ title: index (you're here)
         <ul>
             {% for page in site.pages %}
             <li>
-                <span>{{ page.date | date: "%B %e, %Y" }}</span> <a href="{{ page.url }}">{{ page.title }}</a>
+                <span>{{ page.date | date: "%B %e, %Y" }}</span> <a href="{{ page.dir }}">{{ page.title }}</a>
             </li>
             {% endfor %}
         </ul>
