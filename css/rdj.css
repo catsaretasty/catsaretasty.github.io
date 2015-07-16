@@ -12,7 +12,8 @@
     display:inline-block;
     margin-left: auto;
     margin-right: auto;
-
+    text-decoration:none;
+    color:inherit;
 }
 
 .rdj img {
@@ -23,3 +24,4 @@
 .rdj .name {
     text-align: center;
 }
+

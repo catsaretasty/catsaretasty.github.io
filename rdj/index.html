@@ -1,6 +1,6 @@
 ---
 layout: rdjs
-title: Resident DJs
+title: Resident DJs45645645645645645645613
 ---
 <section class="header">
     <h2 id="rdjtitle">Resident DJs</h2>
@@ -9,7 +9,8 @@ title: Resident DJs
 
 <div id="rdjlist">
     {% for rdj in site.collections.rdjs.docs %}
-        <div class="rdj">
+
+        <a class="rdj" href="{{ rdj.url }}">
             {% comment %} See if the rdj's custom image exists{% endcomment %}
             {% for static_file in site.static_files %}
             {% capture image_url %}/images/rdj/{{ rdj.author }}.png{% endcapture %}
@@ -25,6 +26,6 @@ title: Resident DJs
             {% endif %}
             {% assign customimage = false %}
             <h3 class="name">{{ rdj.title }}</h3>
-        </div>
+        </a>
     {% endfor %}
 </div>
