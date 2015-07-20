@@ -11,6 +11,9 @@ collections:
       permalink: /staff/:path/
   rules:
       output: false
+  events:
+        output: true
+        permalink: /event/:path/
 
 defaults:
   - scope:
@@ -28,6 +31,11 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event
 
 gems:
   - jekyll-sitemap

@@ -51,6 +51,41 @@ footer {
     box-sizing: inherit;
 }*/
 
+.event {
+    text-decoration: none;
+    color:#222;
+    display: block;
+    padding-bottom: 0;
+    width:100%
+}
+
+@media (max-width: 550px) {
+    .news {
+        border-bottom: 1px solid #eee;
+        margin-bottom: 3rem;
+    }
+}
+
+#event-logo {
+    max-width:100%;
+}
+
+.event div {
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.event p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.event-logo img {
+    width: 100px;
+    height: 100px;
+}
+
 #navbar li {
     display: inline-block;
     margin: 0 18px;
