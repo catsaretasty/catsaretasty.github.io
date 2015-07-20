@@ -21,3 +21,6 @@ To create a staff bio, you need to do the following:
 * create a file in the `_staff` directory called `[staff].md`.
 * add their image to `images/staff` directory as `[staff].jpg` (optional)
 * fill out the file.  use any other existing file as a guideline for yours.
+
+### Tastybot
+To update the commands and descriptions, place the generated json file at `data/tastybot-commands.json`.

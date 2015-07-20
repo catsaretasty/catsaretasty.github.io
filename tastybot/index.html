@@ -7,8 +7,8 @@ title: Tastybot
     <p>Here's a list of Tastybot's commands.  We try to update this list as commands change, but it's not always possible.  Ask staff for help concerning commands!</p>
 </section>
 
-{% for role in site.data.tastybot_commands.order %}{% if role %}
-{% assign commands = site.data.tastybot_commands[role] %}
+{% for role in site.data.tastybot-commands.order %}{% if role %}
+{% assign commands = site.data.tastybot-commands[role] %}
 <h2 class="role">{{role}} commands</h2>
 <table class="zebra-striped u-full-width {{role}}">
     <thead>
