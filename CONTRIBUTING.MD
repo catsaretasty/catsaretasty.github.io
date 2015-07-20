@@ -14,6 +14,7 @@ To create a rdj bio, you need do to the following things:
 * create a file in the `_rdjs` directory called `[artist].md`.
 * add their logo to `images/rdj` directory as `[artist].png` (optional, and preferred all-white)
 * fill out the file.  use any other existing file as a guideline for yours.
+* make sure you put their soundcloud id in the `soundcloud:` value
 
 ### Add a staff bio
 To create a staff bio, you need to do the following:
