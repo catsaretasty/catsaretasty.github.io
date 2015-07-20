@@ -2,14 +2,47 @@
 layout: default
 title: News
 ---
+<section class="jumbotron">
+    <h2>All News and Events</h2>
+</section>
+<div class="row">
 
-<div id='news' class="u-full-width">
-    <h3 class="u-center">All News</h3>
+    <div id=news" class="one-half column news">
+        <h3 class="u-center">News and Updates</h3>
 
-    {% for post in site.posts %}
-    <div>
-        <span>{{ post.date | date: "%B %e, %Y" }}</span>
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        {% for post in site.posts %}
+        <div>
+            <span>{{ post.date | date: "%B %e, %Y" }}</span>
+            <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+        </div>
+        {% endfor %}
+        <p class="u-center"><a href="/posts">view all posts</a></p>
     </div>
-    {% endfor %}
+    <div class="one-half column events">
+        <h3 class="u-center">Events</h3>
+
+        {% assign events = site.collections.events.docs | sort: 'date' | reverse %}
+        {% for event in events %}
+        <a id="events" class="event u-cf" href="{{ event.url }}">
+            <div class="event-name">
+                <p>{{ event.title }}</p>
+                <span>{{ event.date | date: "%B %e, %Y, %I:%M%P" }}</span>
+            </div>
+            {% for static_file in site.static_files %}
+            {% capture image_url %}/images/events/{{ event.image }}{% endcapture %}
+            {% if static_file.path == image_url %}
+            {% assign customimage = true %}
+            {% endif %}
+            {% endfor %}
+            <div class="event-logo u-pull-right">
+                {% if customimage %}
+                <img src="{{ image_url }}" href="{{ rdj.url }}"/>
+                {% else %}
+                <img src="/images/events/default.png" href="{{ rdj.url }}"/>
+                {% endif %}
+            </div>
+            {% assign customimage = false %}
+        </a>
+        {% endfor %}
+    </div>
 </div>
