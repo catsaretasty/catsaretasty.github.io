@@ -1,8 +1,10 @@
 # Contributing
 ## General Naming Guidelines
 In the formatting data of posts and other information (the `---` block at the top of the file), naming conventions matter!
+
 Feel free to use any sane way to write `title:` values, but `name:` and `author:` values **NEED** to be
 all lowercase with no spaces or special characters besides `-`.  i.e. only `a-z` and `-`.
+
 This all lowercase, no space naming convention is **also** required for filenames!
 
 
