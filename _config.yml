@@ -23,6 +23,11 @@ defaults:
       type: staff
     values:
       layout: bio-staff
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
 gems:
   - jekyll-sitemap

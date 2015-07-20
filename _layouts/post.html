@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+<body>
+{% include header.html %}
+
+<div class="container">
+    <section class="jumbotron">
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.date | date: "%B %e, %Y" }}</p>
+    </section>
+    {{ content }}
+</div>
+
+{% include footer.html %}
+</body>
+</html>
