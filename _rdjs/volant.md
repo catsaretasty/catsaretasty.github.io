@@ -1,6 +1,6 @@
 ---
 title: Volant
-author: volant
+name: volant #lowercase-no-spaces
 soundcloud: VolantMusic
 ---
 

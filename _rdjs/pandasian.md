@@ -1,6 +1,6 @@
 ---
 title: Pandasian
-author: pandasian
+name: pandasian
 soundcloud: pandasian
 ---
 
