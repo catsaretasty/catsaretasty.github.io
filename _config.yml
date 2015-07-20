@@ -9,6 +9,8 @@ collections:
   staff:
       output: true
       permalink: /staff/:path/
+  rules:
+      output: false
 
 defaults:
   - scope:

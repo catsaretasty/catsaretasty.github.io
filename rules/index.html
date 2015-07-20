@@ -1,0 +1,37 @@
+---
+layout: default
+title: FAQ & Rules
+---
+
+<section class="jumbotron">
+    <h2>Rules and FAQ</h2>
+</section>
+<section id="rules" class="row">
+<div class="one-half column">
+    <h3 class="u-center">DJ Rules</h3>
+    {% for file in site.collections.rules.docs %}
+      {% if file.name == 'dj' %}
+        {{ file.content }}
+      {% endif %}
+    {% endfor %}
+</div>
+<div class="one-half column">
+    <h3 class="u-center">Chat Rules</h3>
+    {% for file in site.collections.rules.docs %}
+      {% if file.name == 'chat' %}
+        {{ file.content }}
+      {% endif %}
+    {% endfor %}
+</div>
+</section>
+<section id="faq" class="row">
+<div class="u-full-width">
+    <h3 class="u-center">FAQ</h3>
+    {% for file in site.collections.rules.docs %}
+    {% if file.name == 'faq' %}
+    {{ file.content }}
+    {% endif %}
+    {% endfor %}
+
+</div>
+</section>

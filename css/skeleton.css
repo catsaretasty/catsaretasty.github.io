@@ -561,6 +561,14 @@ form {
     float: left;
 }
 
+.u-center {
+    text-align: center;
+}
+
+.u-bold {
+    font-weight: 600;
+}
+
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
