@@ -34,6 +34,23 @@
     letter-spacing: .1rem;
 }
 
+/* FOOTER SHIT IN CASE WE WANT A DAMN FOOTER
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #eee;
+    padding: 1rem;
+    text-align: center;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}*/
+
 #navbar li {
     display: inline-block;
     margin: 0 18px;
@@ -256,6 +273,8 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
     font-size: 62.5%;
     overflow-y: scroll;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -264,6 +283,10 @@ body {
     font-weight: 400;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
+    position:relative;
+    padding-bottom: 5rem;
+    min-height: 100%;
+    margin:0;
 }
 
 /* Typography
