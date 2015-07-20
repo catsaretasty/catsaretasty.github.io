@@ -27,10 +27,9 @@ title: FAQ & Rules
 <section id="faq" class="row">
 <div class="u-full-width">
     <h3 class="u-center">FAQ</h3>
-    {% for file in site.collections.rules.docs %}
-    {% if file.name == 'faq' %}
-    {{ file.content }}
-    {% endif %}
+    {% for faq in site.collections.faqs.docs %}
+        <h4>{{ faq.title }}</h4>
+        <p>{{ faq.content }}</p>
     {% endfor %}
 
 </div>

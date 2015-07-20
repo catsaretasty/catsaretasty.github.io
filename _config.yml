@@ -11,6 +11,8 @@ collections:
       permalink: /staff/:path/
   rules:
       output: false
+  faqs:
+        output: false
   events:
         output: true
         permalink: /event/:path/
