@@ -11,7 +11,7 @@ title: index (you're here)
     <div class="one-half column news">
         <h3 class="u-center">News and Updates</h3>
 
-        {% for post in site.posts limit:5%}
+        {% for post in site.posts limit:4 %}
         <div>
             <span>{{ post.date | date: "%B %e, %Y" }}</span>
             <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
