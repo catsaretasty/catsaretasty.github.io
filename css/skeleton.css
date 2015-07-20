@@ -149,6 +149,13 @@ footer {
     }
 }
 
+/* For devices smaller than 400px */
+@media (max-width: 700px) {
+    #navbar li.home {
+        display:block;
+    }
+}
+
 /* For devices larger than 550px */
 @media (min-width: 550px) {
     .container {
