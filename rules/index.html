@@ -25,12 +25,14 @@ title: FAQ & Rules
 </div>
 </section>
 <section id="faq" class="row">
-<div class="u-full-width">
-    <h3 class="u-center">FAQ</h3>
-    {% for faq in site.collections.faqs.docs %}
-        <h4>{{ faq.title }}</h4>
-        <p>{{ faq.content }}</p>
-    {% endfor %}
+    <div class="u-full-width">
+        <h3 class="u-center">FAQ</h3>
+        {% for faq in site.collections.faqs.docs %}
+            <div class="faq">
+                <h4>{{ faq.title }}</h4>
+                <p>{{ faq.content }}</p>
+            </div>
+        {% endfor %}
 
-</div>
+    </div>
 </section>

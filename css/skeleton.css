@@ -111,7 +111,14 @@ footer {
     font-size: 1.7rem;
 }
 
+.faq {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+}
 
+.faq:last-child {
+    border-bottom: none;
+}
 
 .jumbotron {
     margin-top: 3rem;
