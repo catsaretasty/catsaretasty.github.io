@@ -36,7 +36,7 @@ date: 2015-01-31 17:00:00
 image: default.jpg (can be png also)
 ---
 event message here.  this can be blank, a senctence long, or a full essay.
-just remember that everything below the --- is a markdown file.
+just remember that everything below the --- section is a markdown file.
 ```
 
 
