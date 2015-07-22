@@ -1,5 +1,4 @@
 ---
-layout: userlist
 title: Resident DJs
 ---
 <section class="jumbotron">
@@ -7,7 +6,7 @@ title: Resident DJs
     <p id="tagline">A group of individuals that have impressed the Tastycat room with their music and continue to do so.</p>
 </section>
 
-<div id="list">
+<div id="userlist" class="u-center">
     {% for rdj in site.collections.rdjs.docs %}
 
         <a class="user" href="{{ rdj.url }}">

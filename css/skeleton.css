@@ -812,3 +812,30 @@ there.
         content: "Description";
     }
 }
+
+/* userlist */
+#userlist img.face {
+    max-width: 250px;
+}
+
+#userlist img.rdj-logo {
+    max-width: 200px;
+    background-color: #222;
+}
+
+#userlist .user{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration:none;
+    color:inherit;
+}
+
+@media (max-width: 550px) {
+    #userlist .user {
+        margin-bottom:1rem;
+        border-bottom:1px solid #ddd;
+    }
+}
+
+

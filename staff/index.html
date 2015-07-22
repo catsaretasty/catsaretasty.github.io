@@ -1,5 +1,4 @@
 ---
-layout: userlist
 title: Staff
 ---
 <section class="jumbotron">
@@ -8,7 +7,7 @@ title: Staff
 </section>
 
 
-<div id="list">
+<div id="userlist">
     {% for staff in site.collections.staff.docs %}
 
     <a class="user" href="{{ staff.url }}">
@@ -26,7 +25,7 @@ title: Staff
         <img class="face" src="/images/staff/default.jpg" href="{{ staff.url }}"/>
         {% endif %}
         {% assign customimage = false %}
-        <h3 class="name">{{ staff.name }}</h3>
+        <h3 class="u-center">{{ staff.name }}</h3>
     </a>
     {% endfor %}
 </div>
