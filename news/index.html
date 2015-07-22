@@ -28,7 +28,7 @@ title: News
                 <span>{{ event.date | date: "%B %e, %Y, %I:%M%P" }}</span>
             </div>
             {% for static_file in site.static_files %}
-            {% capture image_url %}{{ site.baseurl | prepend: site.url }}/images/events/thumb/{{ event.image }}{% endcapture %}
+            {% capture image_url %}/images/events/thumb/{{ event.image }}{% endcapture %}
             {% if static_file.path == image_url %}
             {% assign customimage = true %}
             {% endif %}
