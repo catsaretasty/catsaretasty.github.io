@@ -43,5 +43,12 @@ defaults:
     values:
       layout: event
 
+exclude:
+- CNAME
+- Gemfile
+- CONTRIBUTING.md
+- LICENSE
+- README.md
+
 gems:
   - jekyll-sitemap
