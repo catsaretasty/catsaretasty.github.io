@@ -13,7 +13,7 @@ title: News
         {% for post in site.posts %}
         <div>
             <span>{{ post.date | date: "%B %e, %Y" }}</span>
-            <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+            <h5><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h5>
         </div>
         {% endfor %}
     </div>
@@ -22,22 +22,22 @@ title: News
 
         {% assign events = site.collections.events.docs | sort: 'date' | reverse %}
         {% for event in events %}
-        <a class="event u-cf" href="{{ event.url }}">
+        <a class="event u-cf" href="{{ event.url | prepend: site.baseurl | prepend: site.url }}">
             <div class="event-name">
                 <p>{{ event.title }}</p>
                 <span>{{ event.date | date: "%B %e, %Y, %I:%M%P" }}</span>
             </div>
             {% for static_file in site.static_files %}
-            {% capture image_url %}/images/events/thumb/{{ event.image }}{% endcapture %}
+            {% capture image_url %}{{ site.baseurl | prepend: site.url }}/images/events/thumb/{{ event.image }}{% endcapture %}
             {% if static_file.path == image_url %}
             {% assign customimage = true %}
             {% endif %}
             {% endfor %}
             <div class="event-logo u-pull-right">
                 {% if customimage %}
-                <img src="{{ image_url }}" href="{{ rdj.url }}"/>
+                <img src="{{ image_url prepend: site.baseurl | prepend: site.url }}"/>
                 {% else %}
-                <img src="/images/events/thumb/default.png"/>
+                <img src="{{ site.baseurl | prepend: site.url }}/images/events/thumb/default.png"/>
                 {% endif %}
             </div>
             {% assign customimage = false %}

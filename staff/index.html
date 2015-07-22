@@ -10,19 +10,19 @@ title: Staff
 <div id="userlist" class="u-center">
     {% for staff in site.collections.staff.docs %}
 
-    <a class="user" href="{{ staff.url }}">
+    <a class="user" href="{{ staff.url | prepend: site.baseurl | prepend: site.url }}">
         {% comment %} See if the rdj's custom image exists{% endcomment %}
         {% for static_file in site.static_files %}
-        {% capture image_url %}/images/staff/{{ staff.id }}.jpg{% endcapture %}
+        {% capture image_url %}{{ site.baseurl | prepend: site.url }}/images/staff/{{ staff.id }}.jpg{% endcapture %}
         {% if static_file.path == image_url %}
         {% assign customimage = true %}
         {% endif %}
         {% endfor %}
 
         {% if customimage %}
-        <img class="face" src="{{ image_url }}" href="{{ staff.url }}"/>
+        <img class="face" src="{{ image_url | prepend: site.baseurl | prepend: site.url }}"/>
         {% else %}
-        <img class="face" src="/images/staff/default.jpg" href="{{ staff.url }}"/>
+        <img class="face" src="{{ site.baseurl | prepend: site.url }}/images/staff/default.jpg"/>
         {% endif %}
         {% assign customimage = false %}
         <h3 class="u-center">{{ staff.name }}</h3>

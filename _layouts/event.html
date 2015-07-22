@@ -25,8 +25,8 @@
     {% if thumbimage and fullimage %}
     <div id="imagespace" class="u-center">
         <p class="noscript">click to expand image</p>
-        <a id="imagewrapper" href="{{full_url}}">
-            <img id="event-logo" src="{{ thumb_url }}" onclick="swapImage(this)"/>
+        <a id="imagewrapper" href="{{ full_url | prepend: site.baseurl | prepend: site.url }}">
+            <img id="event-logo" src="{{ thumb_url | prepend: site.baseurl | prepend: site.url }}" onclick="swapImage(this)"/>
         </a>
     </div>
     {% endif %}
@@ -35,7 +35,7 @@
 <script type="text/javascript">
     var thumbnail = true;
     function swapImage(img){
-        img.src = thumbnail ? '{{ full_url }}' : '{{ thumb_url }}';
+        img.src = thumbnail ? '{{ full_url | prepend: site.baseurl | prepend: site.url }}' : '{{ thumb_url | prepend: site.baseurl | prepend: site.url }}';
         thumbnail = !thumbnail;
     }
     document.querySelector("#imagespace").appendChild(document.querySelector("#event-logo"));

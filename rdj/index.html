@@ -9,19 +9,19 @@ title: Resident DJs
 <div id="userlist" class="u-center">
     {% for rdj in site.collections.rdjs.docs %}
 
-        <a class="user" href="{{ rdj.url }}">
+        <a class="user" href="{{ rdj.url | prepend: site.baseurl | prepend: site.url }}">
             {% comment %} See if the rdj's custom image exists{% endcomment %}
             {% for static_file in site.static_files %}
-            {% capture image_url %}/images/rdj/{{ rdj.name }}.png{% endcapture %}
+            {% capture image_url %}{{ site.baseurl | prepend: site.url }}/images/rdj/{{ rdj.name }}.png{% endcapture %}
             {% if static_file.path == image_url %}
             {% assign customimage = true %}
             {% endif %}
             {% endfor %}
 
             {% if customimage %}
-            <img class="rdj-logo" src="{{ image_url }}" href="{{ rdj.url }}"/>
+            <img class="rdj-logo" src="{{ image_url | prepend: site.baseurl | prepend: site.url }}"/>
             {% else %}
-            <img class="rdj-logo" src="/images/rdj/default.png" href="{{ rdj.url }}"/>
+            <img class="rdj-logo" src="{{ site.baseurl | prepend: site.url }}/images/rdj/default.png"/>
             {% endif %}
             {% assign customimage = false %}
             <h5 class="name">{{ rdj.title }}</h5>
