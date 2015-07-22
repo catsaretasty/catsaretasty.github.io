@@ -1,3 +1,6 @@
+<!-- Fonts -->
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
@@ -14,9 +17,6 @@
 <link rel="stylesheet" href="{{ "/css/skeleton.css" | prepend: site.baseurl }}" type="text/css">
 <link rel="stylesheet" href="{{ "/css/normalize.css" | prepend: site.baseurl }}" type="text/css">
 
-<!-- Fonts -->
-<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
 <!-- Open Graph -->
 <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
 <meta property="og:locale" content="en_US">
@@ -25,3 +25,13 @@
 <meta property="og:description" content="{% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title | xml_escape }}">
+
+<style>
+    body {
+        font-size: 1.5em;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #222;
+    }
+</style>
