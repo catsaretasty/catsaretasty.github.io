@@ -80,17 +80,6 @@ img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-
     box-sizing: border-box;
 }
 
-#news div:nth-child(odd) {
-    float:right;
-    text-align: right;
-}
-
-#news div:nth-child(even) {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .column,
 .columns {
     width: 100%;
