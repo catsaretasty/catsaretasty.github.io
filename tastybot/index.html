@@ -1,5 +1,4 @@
 ---
-layout: tastybot
 title: Tastybot
 ---
 <section class="jumbotron">
@@ -9,8 +8,8 @@ title: Tastybot
 
 {% for role in site.data.tastybot-commands.order %}{% if role %}
 {% assign commands = site.data.tastybot-commands[role] %}
-<h2 class="role">{{role}} commands</h2>
-<table class="zebra-striped u-full-width {{role}}">
+<h2 class="u-center">{{role}} commands</h2>
+<table class="zebra-striped u-full-width commands">
     <thead>
         <tr>
             <th>Command</th>
@@ -29,4 +28,4 @@ title: Tastybot
     </tbody>
 </table>
 {% endif %}{% endfor %}
-<p>©2014-{{ site.time | date: '%y' }} Fungus (Olivier Houle).</p>
+<p class="u-center">©2014-{{ site.time | date: '%y' }} Fungus (Olivier Houle).</p>
