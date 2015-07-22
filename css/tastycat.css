@@ -818,6 +818,10 @@ hr {
     width:100%
 }
 
+#all-events {
+    margin-top: 2rem;
+}
+
 #event-logo {
     max-width:100%;
 }
