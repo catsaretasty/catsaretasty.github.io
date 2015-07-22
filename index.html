@@ -12,17 +12,17 @@
         {% for post in site.posts limit:5 %}
         <div>
             <span>{{ post.date | date: "%B %e, %Y" }}</span>
-            <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+            <h5><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h5>
         </div>
         {% endfor %}
-        <p class="u-center"><a href="/news#news">view all posts</a></p>
+        <p class="u-center"><a href="{{ site.baseurl | prepend: site.url }}/news/#news">view all posts</a></p>
     </div>
     <div class="one-half column events">
         <h3 class="u-center">Events</h3>
 
         {% assign events = site.collections.events.docs | sort: 'date' | reverse %}
         {% for event in events limit:4 %}
-        <a class="event u-cf" href="{{ event.url }}">
+        <a class="event u-cf" href="{{ event.url | prepend: site.baseurl | prepend: site.url }}">
             <div class="event-name">
                 <p>{{ event.title }}</p>
                 <span>{{ event.date | date: "%B %e, %Y, %I:%M%P" }}</span>
@@ -35,15 +35,15 @@
             {% endfor %}
             <div class="event-logo u-pull-right">
                 {% if customimage %}
-                <img src="{{ image_url }}"/>
+                <img src="{{ image_url | prepend: site.baseurl | prepend: site.url }}"/>
                 {% else %}
-                <img src="/images/events/thumb/default.png"/>
+                <img src="{{ site.baseurl | prepend: site.url }}/images/events/thumb/default.png"/>
                 {% endif %}
             </div>
             {% assign customimage = false %}
         </a>
         {% endfor %}
-        <p id="all-events" class="u-center"><a href="/news#events">view all events</a></p>
+        <p id="all-events" class="u-center"><a href="{{ site.baseurl | prepend: site.url }}/news/#events">view all events</a></p>
     </div>
 </div>
 <hr />
