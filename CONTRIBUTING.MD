@@ -7,6 +7,38 @@ all lowercase with no spaces or special characters besides `-`.  i.e. only `a-z`
 
 This all lowercase, no space naming convention is **also** required for filenames!
 
+### File Formats
+All of these `.md` files you are creating are slightly modified markdown files.
+There is a YAML header at the top, which looks like:
+```
+---
+title: example markdown file
+name: git
+---
+```
+
+Everything below the header is evaluated as a pure markdown file; so everything is markdown after the `---` header
+
+### Add an event
+To create an event, consider the following:
+
+* create a unique file in the `_events` folder
+* add the image poster to `images/events` with a unique filename
+* put the filename (only the filename, not any of the path) in the `image:` value of the markdown file
+* put a 100x100 image in the `images/events/thumb` folder with the same name as the event poster
+* make sure your date follows the format of `2015-01-31 17:00:00`
+
+example event: `_events/example.md`
+```
+---
+title: example event
+date: 2015-01-31 17:00:00
+image: default.jpg (can be png also)
+---
+event message here.  this can be blank, a senctence long, or a full essay.
+just remember that everything below the --- is a markdown file.
+```
+
 
 ### Add a RDJ bio
 To create a rdj bio, you need do to the following things:
