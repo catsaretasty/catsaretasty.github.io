@@ -48,12 +48,41 @@ To create a rdj bio, you need do to the following things:
 * fill out the file.  use any other existing file as a guideline for yours.
 * make sure you put their soundcloud id in the `soundcloud:` value
 
+example rdj: `_rdjs/next-big-hit.md`
+```
+---
+title: The Next Big Hit
+name: next-big-hit
+soundcloud: next-big-hit-official
+---
+I am the next big hit.  you will listen to my music until your ears bleed.
+```
+
 ### Add a staff bio
 To create a staff bio, you need to do the following:
 
 * create a file in the `_staff` directory called `[staff].md`.
 * add their image to `images/staff` directory as `[staff].jpg` (optional)
 * fill out the file.  use any other existing file as a guideline for yours.
+
+example staff: `_staff/git.md`
+```
+---
+name: FAT32
+id: rowan
+---
+i like to ban people when im angry.
+
+i like to ban people when im bored.
+
+i like to ban people when im sad.
+
+i like to ban people.
+
+i will ban users
+when i feel like banning them
+fear me i am fat
+```
 
 ### Tastybot
 To update the commands and descriptions, place the generated json file at `data/tastybot-commands.json`.
