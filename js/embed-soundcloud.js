@@ -6,6 +6,6 @@ function embedSoundcloud(id) {
         }
     };
 
-    r.open('GET', 'http://api.soundcloud.com/resolve?url=http://soundcloud.com/' + id + '&client_id=27b0c9c2c33ba40bcb06b6026112a568', true);
+    r.open('GET', 'https://api.soundcloud.com/resolve?url=http://soundcloud.com/' + id + '&client_id=27b0c9c2c33ba40bcb06b6026112a568', true);
     r.send(null);
 }
