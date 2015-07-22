@@ -650,6 +650,9 @@ there.
 
 /* misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.noscript {
+    display:none;
+}
 .jumbotron {
     margin-top: 3rem;
     text-align: center;

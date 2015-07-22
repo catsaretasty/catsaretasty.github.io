@@ -13,14 +13,36 @@
     </section>
     {{ content }}
     {% for static_file in site.static_files %}
-    {% capture image_url %}/images/events/{{ page.image }}{% endcapture %}
-    {% if static_file.path == image_url %}
-    {% assign customimage = true %}
+    {% capture thumb_url %}/images/events/thumb/{{ page.image }}{% endcapture %}
+    {% if static_file.path == thumb_url %}
+    {% assign thumbimage = true %}
+    {% endif %}
+    {% capture full_url %}/images/events/{{ page.image }}{% endcapture %}
+    {% if static_file.path == full_url %}
+    {% assign fullimage = true %}
     {% endif %}
     {% endfor %}
-    {% if customimage %}
-    <div class="u-center"><img id="event-logo" src="{{ image_url }}" href="{{ page.image }}"/></div>
+    {% if thumbimage and fullimage %}
+    <div id="imagespace" class="u-center">
+        <p class="noscript">click to expand image</p>
+        <a id="imagewrapper" href="{{full_url}}">
+            <img id="event-logo" src="{{ thumb_url }}" onclick="swapImage(this)"/>
+        </a>
+    </div>
     {% endif %}
 </div>
+{% if fullimage and thumbimage%}
+<script type="text/javascript">
+    var thumbnail = true;
+    function swapImage(img){
+        img.src = thumbnail ? '{{ full_url }}' : '{{ thumb_url }}';
+        thumbnail = !thumbnail;
+    }
+    document.querySelector("#imagespace").appendChild(document.querySelector("#event-logo"));
+    var wrapper = document.querySelector("#imagewrapper");
+    wrapper.parentNode.removeChild(wrapper);
+</script>
+{% endif %}
+<script type="text/javascript" src="/js/noscript.js"></script>
 </body>
 </html>
