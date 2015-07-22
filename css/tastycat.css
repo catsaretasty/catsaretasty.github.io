@@ -26,6 +26,7 @@ img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-
 - tastybot commands
 - userlist
 - events
+- rules/faq
 */
 
 /* navigation bar
@@ -831,3 +832,32 @@ hr {
     height: 100px;
 }
 
+/* rules/faq
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#faq-list {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    padding:1rem 0;
+}
+#faq-list ul {
+    display:inline-block;
+    margin:0;
+}
+#faq-list ul li {
+    list-style-type: none;
+}
+
+
+#faq-list li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+#faq-list li a {
+    text-decoration: none;
+    color:#222;
+}
+
+#faq-list li a:hover {
+    color:#0FA0CE;
+}

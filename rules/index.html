@@ -26,9 +26,16 @@ title: FAQ & Rules
 </section>
 <section id="faq" class="row">
     <div class="u-full-width">
-        <h3 class="u-center">FAQ</h3>
+        <h3 class="u-center">FAQs</h3>
+        <div id="faq-list" class="u-center">
+            {% for faq in site.collections.faqs.docs %}
+            <ul>
+                <li><a href="#{{faq.title | xml_escape }}"><h5>{{faq.title}}</h5></a></li>
+            </ul>
+            {% endfor %}
+        </div>
         {% for faq in site.collections.faqs.docs %}
-            <div class="faq">
+            <div id="{{faq.title | xml_escape }}" class="faq">
                 <h4>{{ faq.title }}</h4>
                 <p>{{ faq.content }}</p>
             </div>
