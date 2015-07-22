@@ -803,7 +803,6 @@ hr {
 .event {
     text-decoration: none;
     color:#222;
-    display: block;
     padding-bottom: 0;
     width:100%
 }
