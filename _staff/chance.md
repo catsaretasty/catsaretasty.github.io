@@ -4,4 +4,4 @@ id: chance
 ---
 Take a chance on me ;)
 
-[steam](http://steamcommunity.com/id/LPChance)
+[Steam](http://steamcommunity.com/profiles/76561198045708273/)
