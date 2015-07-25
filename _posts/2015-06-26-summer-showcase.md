@@ -1,7 +1,5 @@
 ---
 title: '"Summer Kickoff" Showcase'
-categories: []
-tags: []
 ---
 If you have not been on Tastycat on June 6th, let us fill you in! We've hosted a showcase of music producers who wholeheartedly participated and expanded our views!
 
