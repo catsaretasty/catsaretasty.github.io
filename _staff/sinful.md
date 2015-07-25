@@ -3,7 +3,7 @@ name: sinful
 id: sinful
 ---
 I'm very sarcastic, I don't write poems about banning people, and I most likely don't run a charity.
-send me all your rare pepes
+Send me all your rare pepes.
 
 I also love red pandas and huskies so don't hate, k?
 
