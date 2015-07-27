@@ -1,7 +1,7 @@
 timezone: UTC
 encoding: utf-8
 title: Tastycat
-url: http://tastycat.net
+url: https://socketplug.org
 
 collections:
   rdjs:
