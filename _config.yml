@@ -1,7 +1,7 @@
 timezone: UTC
 encoding: utf-8
 title: Tastycat
-url: http://catsaretasty.github.io/old_incomplete_site
+url: https://catsaretasty.github.io/old_incomplete_site
 
 collections:
   rdjs:
