@@ -8,8 +8,7 @@ title: Staff
 
 
 <div id="userlist" class="u-center">
-    {% for staff in site.collections.staff.docs %}
-
+    {% for staff in site.staff %}
     <a class="user" href="{{ staff.url | prepend: site.baseurl | prepend: site.url }}">
         {% comment %} See if the rdj's custom image exists{% endcomment %}
         {% for static_file in site.static_files %}

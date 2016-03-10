@@ -19,32 +19,29 @@ title: News
     </div>
     <div id="events" class="one-half column events">
         <h3 class="u-center">Events</h3>
-        {% for collection in site.collections %}
-            {% if collection.label == 'events' %}
-                {% assign events = collection.docs | sort: 'date' | reverse %}
-                {% for event in events %}
-                <a class="event u-cf" href="{{ event.url | prepend: site.baseurl | prepend: site.url }}">
-                    <div class="event-name">
-                        <p>{{ event.title }}</p>
-                        <span>{{ event.date | date: "%B %e, %Y, %I:%M%P" }}</span>
-                    </div>
-                    {% for static_file in site.static_files %}
-                    {% capture image_url %}/images/events/thumb/{{ event.image }}{% endcapture %}
-                    {% if static_file.path == image_url %}
-                    {% assign customimage = true %}
-                    {% endif %}
-                    {% endfor %}
-                    <div class="event-logo u-pull-right">
-                        {% if customimage %}
-                        <img src="{{ image_url prepend: site.baseurl | prepend: site.url }}"/>
-                        {% else %}
-                        <img src="{{ site.baseurl | prepend: site.url }}/images/events/thumb/default.png"/>
-                        {% endif %}
-                    </div>
-                    {% assign customimage = false %}
-                </a>
-                {% endfor %}
+        {% assign events = site.events | sort: 'date' | reverse %}
+        {% for event in events %}
+        <a class="event u-cf" href="{{ event.url | prepend: site.baseurl | prepend: site.url }}">
+            <div class="event-name">
+                <p>{{ event.title }}</p>
+                <span>{{ event.date | date: "%B %e, %Y, %I:%M%P" }}</span>
+            </div>
+            {% for static_file in site.static_files %}
+            {% capture image_url %}/images/events/thumb/{{ event.image }}{% endcapture %}
+            {% if static_file.path == image_url %}
+            {% assign customimage = true %}
             {% endif %}
+            {% endfor %}
+            <div class="event-logo u-pull-right">
+                {% if customimage %}
+                <img src="{{ image_url prepend: site.baseurl | prepend: site.url }}"/>
+                {% else %}
+                <img src="{{ site.baseurl | prepend: site.url }}/images/events/thumb/default.png"/>
+                {% endif %}
+            </div>
+            {% assign customimage = false %}
+        </a>
         {% endfor %}
+
     </div>
 </div>
