@@ -19,8 +19,7 @@ title: News
     </div>
     <div id="events" class="one-half column events">
         <h3 class="u-center">Events</h3>
-
-        {% assign events = site.collections.events.docs | sort: 'date' | reverse %}
+        {% assign events = site.events | sort: 'date' | reverse %}
         {% for event in events %}
         <a class="event u-cf" href="{{ event.url | prepend: site.baseurl | prepend: site.url }}">
             <div class="event-name">
@@ -43,5 +42,6 @@ title: News
             {% assign customimage = false %}
         </a>
         {% endfor %}
+
     </div>
 </div>

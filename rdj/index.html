@@ -7,7 +7,7 @@ title: Resident DJs
 </section>
 
 <div id="userlist" class="u-center">
-    {% for rdj in site.collections.rdjs.docs %}
+    {% for rdj in site.rdjs %}
 
         <a class="user" href="{{ rdj.url | prepend: site.baseurl | prepend: site.url }}">
             {% comment %} See if the rdj's custom image exists{% endcomment %}

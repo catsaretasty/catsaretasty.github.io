@@ -9,7 +9,7 @@ title: FAQ & Rules
 <section id="rules" class="row">
 <div class="one-half column">
     <h3 class="u-center">DJ Rules</h3>
-    {% for file in site.collections.rules.docs %}
+    {% for file in site.rules %}
       {% if file.name == 'dj' %}
         {{ file.content }}
       {% endif %}
@@ -17,7 +17,7 @@ title: FAQ & Rules
 </div>
 <div class="one-half column">
     <h3 class="u-center">Chat Rules</h3>
-    {% for file in site.collections.rules.docs %}
+    {% for file in site.rules %}
       {% if file.name == 'chat' %}
         {{ file.content }}
       {% endif %}
@@ -28,13 +28,13 @@ title: FAQ & Rules
     <div class="u-full-width">
         <h3 class="u-center">FAQs</h3>
         <div id="faq-list" class="u-center">
-            {% for faq in site.collections.faqs.docs %}
+            {% for faq in site.faqs %}
             <ul>
                 <li><a href="#{{faq.title | xml_escape }}"><h5>{{faq.title}}</h5></a></li>
             </ul>
             {% endfor %}
         </div>
-        {% for faq in site.collections.faqs.docs %}
+        {% for faq in site.faqs %}
             <div id="{{faq.title | xml_escape }}" class="faq">
                 <h4>{{ faq.title }}</h4>
                 <p>{{ faq.content }}</p>

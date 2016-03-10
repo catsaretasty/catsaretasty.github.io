@@ -4,8 +4,9 @@
     <img src="{{ site.baseurl | prepend: site.url }}/images/tastycat.png">
 </section>
 
-<div class="row">
+<h1 class="u-center">Join our <a href="https://discord.gg/0XrD4zABoddTGMZI">DISCORD</a> server.</h1>
 
+<div class="row">
     <div class="one-half column news">
         <h3 class="u-center">News and Updates</h3>
 
@@ -19,8 +20,7 @@
     </div>
     <div class="one-half column events">
         <h3 class="u-center">Events</h3>
-
-        {% assign events = site.collections.events.docs | sort: 'date' | reverse %}
+        {% assign events = site.events | sort: 'date' | reverse %}
         {% for event in events limit:4 %}
         <a class="event u-cf" href="{{ event.url | prepend: site.baseurl | prepend: site.url }}">
             <div class="event-name">
