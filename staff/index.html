@@ -12,7 +12,7 @@ title: Staff
     <a class="user" href="{{ staff.url | prepend: site.baseurl | prepend: site.url }}">
         {% comment %} See if the rdj's custom image exists{% endcomment %}
         {% for static_file in site.static_files %}
-        {% capture image_url %}/images/staff/{{ staff.id }}.jpg{% endcapture %}
+        {% capture image_url %}/images/staff/{{ staff.slug }}.jpg{% endcapture %}
         {% if static_file.path == image_url %}
         {% assign customimage = true %}
         {% endif %}
