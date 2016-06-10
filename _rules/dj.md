@@ -11,7 +11,7 @@ name: dj
 8. Do not play "troll" songs. They will be skipped and you may be kicked from the waitlist or the room.
 9. You are encouraged to play your own songs, but we request that you do not play more than three of your own tracks in a single week. They can be 3 different tracks you can play in a week or 1 single track you play 3 times in a week. This rule also applies to channel promoters. We reserve the right to skip/kick those who we feel are taking advantage of our community in order to boost channel views.
 
-Using [Tastyplug’s](https://fungustime.pw/tastyplug) **/opcheck** command will show you how often a song has been played the past day/week/month. If your song that is currently playing fits the criteria below, staff will be allowed to lockskip or skip it.
+Using [Tastyplug’s](https://tastyplug.tastycat.org) **/opcheck** command will show you how often a song has been played the past day/week/month. If your song that is currently playing fits the criteria below, staff will be allowed to lockskip or skip it.
 
  * A song that has already been played **once** today should be avoided being played again.
 
