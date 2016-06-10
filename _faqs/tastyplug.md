@@ -1,7 +1,7 @@
 ---
 title: What is Tastyplug?
 ---
-Tastyplug is our official room plugin that gives you some awesome features while you’re in the room! Type /commands in chat to get a full list of commands for Tastyplug and even a link to Tastybot commands! Grab Tastyplug [here](https://fungustime.pw/tastyplug/)!
+Tastyplug is our official room plugin that gives you some awesome features while you’re in the room! Type /commands in chat to get a full list of commands for Tastyplug and even a link to Tastybot commands! Grab Tastyplug [here](https://tastyplug.tastycat.org/)!
 
 Tastyplug Features:
 
