@@ -77,25 +77,25 @@ worth it. Thank you.
 
 Now enough of the emotional rubbish, as we are sure you would like details on how to follow our friends!
 
-####Priority One:
+#### Priority One:
 
 * [Facebook](http://goo.gl/M1FnHt)
 * [Soundcloud](http://goo.gl/WPRnR5)
 * [Twitter](http://goo.gl/2GdT8O)
 
-####Champion:
+#### Champion:
 
 * [Facebook](http://goo.gl/bRDemm)
 * [Soundcloud](http://goo.gl/w2lB2E)
 * [Twitter](http://goo.gl/tzj7Dm)
 
-####Wavelen:
+#### Wavelen:
 
 * [Facebook](http://goo.gl/J3qY5G)
 * [Soundcloud](http://goo.gl/rr4evM)
 * [Twitter](http://goo.gl/OGcVOE)
 
-####Bustre:
+#### Bustre:
 
 * [Facebook](http://goo.gl/3hOAqj)
 * [Soundcloud](http://goo.gl/h5rjxg)
