@@ -1,6 +1,6 @@
 ---
 name: TheAlinator_MK
-id: alinator
+id: thealinator
 ---
 
 Dank Memer
