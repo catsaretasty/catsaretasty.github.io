@@ -25,9 +25,7 @@ Tastyplug Features:
  * When this is enabled, images posted in chat will be displayed.
  
 ##### Custom Emotes
- * You will be able to see all of the custom emotes Tastyplug lets you use! Full Tastyplug emote list [here](https://fungustime.pw/tastyplug/emotes).
- * All the Twitch basic, turbo and sub emotes from all channels are also available, you can find them [here](https://twitchemotes.com/).
- * RCS emotes will be displayed too.
+ * You will be able to see all of the custom emotes Tastyplug lets you use! Full Tastyplug emote list [here](https://emotes.tastycat.org).
  
 ##### Tastymojis
  * With Tastymojis you can change plug's basic emojis for iOS, Twitter or Android ones!
