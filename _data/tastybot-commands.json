@@ -1,756 +1,656 @@
 {
-  "bouncer": [
-    {
-      "args": "none, message, minutes",
-      "command": "motd",
-      "desc": "Sends the MotD in the chat."
-    },
-    {
-      "args": "none",
-      "command": "lock",
-      "desc": "Locks the wait list."
-    },
-    {
-      "args": "none",
-      "command": "cycle",
-      "desc": "Toggles the DJ Cycle."
-    },
-    {
-      "args": "@user position",
-      "command": "move",
-      "desc": "Moves a user on the wait list."
-    },
-    {
-      "args": "position",
-      "command": "keep",
-      "desc": "Keeps the current DJ on the wait list after their turn."
-    },
-    {
-      "args": "level",
-      "command": "lockdown",
-      "desc": "Blocks users under the specified level from posting."
-    },
-    {
-      "args": "none",
-      "command": "spamattack",
-      "desc": "Toggles spam protection."
-    },
-    {
-      "args": "none",
-      "command": "addspam",
-      "desc": "Adds a word to the spam protection list."
-    },
-    {
-      "args": "none",
-      "command": "darude",
-      "desc": "Toggles Darude spam protection."
-    },
-    {
-      "args": "@user1 @user2",
-      "command": "swap",
-      "desc": "Swaps two users on the wait list."
-    },
-    {
-      "args": "various",
-      "command": "lockskip",
-      "desc": "Lockskips the current song."
-    },
-    {
-      "args": "none",
-      "command": "unlock",
-      "desc": "Unlocks the wait list."
-    },
-    {
-      "args": "none",
-      "command": "skip",
-      "desc": "Skips the current song."
-    },
-    {
-      "args": "@user",
-      "command": "remove",
-      "desc": "Removes the user from the wait list."
-    },
-    {
-      "args": "@user hour, day, none",
-      "command": "kick",
-      "desc": "Kicks the user out of the room."
-    },
-    {
-      "args": "@user",
-      "command": "execute",
-      "desc": "Executes the user."
-    },
-    {
-      "args": "@user",
-      "command": "mute",
-      "desc": "Mutes the user."
-    },
-    {
-      "args": "@user",
-      "command": "unmute",
-      "desc": "Unmutes the user."
-    },
-    {
-      "args": "@user",
-      "command": "linkmute",
-      "desc": "Blocks the user from posting links."
-    },
-    {
-      "args": "@user",
-      "command": "linkunmute",
-      "desc": "Lets the user post links again."
-    },
-    {
-      "args": "@user",
-      "command": "del",
-      "desc": "Deletes the user's chat."
-    },
-    {
-      "args": "none",
-      "command": "delgifs",
-      "desc": "Deletes all gifs in the chat."
-    },
-    {
-      "args": "none",
-      "command": "delimgs",
-      "desc": "Deletes all images in the chat."
-    },
-    {
-      "args": "none",
-      "command": "dellinks",
-      "desc": "Deletes all links in the chat."
-    },
-    {
-      "args": "text",
-      "command": "deltext",
-      "desc": "Deletes all messages containing the text."
-    },
-    {
-      "args": "none",
-      "command": "delemotes",
-      "desc": "Deletes all emotes in the chat."
-    },
-    {
-      "args": "@user",
-      "command": "voteratio",
-      "desc": "Checks the user's votes over the past 30 songs."
-    },
-    {
-      "args": "none",
-      "command": "getmehs",
-      "desc": "Displays who meh'd the song in the browser's console."
-    },
-    {
-      "args": "@user",
-      "command": "autochat",
-      "desc": "Checks if the user is autochatting."
-    },
-    {
-      "args": "@user",
-      "command": "jointime",
-      "desc": "Checks when the user joined the room."
-    },
-    {
-      "args": "none",
-      "command": "status",
-      "desc": "Displays a few settings and uptime."
-    },
-    {
-      "args": "none",
-      "command": "opcheck",
-      "desc": "Checks if the current song is overplayed."
-    },
-    {
-      "args": "none, minutes",
-      "command": "active",
-      "desc": "Checks how many people chatted in the past minutes."
-    },
-    {
-      "args": "none",
-      "command": "ping",
-      "desc": "Pong!"
-    },
-    {
-      "args": "none",
-      "command": "queue",
-      "desc": "Displays the add queue."
-    },
-    {
-      "args": "none, 2, 3, 4",
-      "command": "getlist",
-      "desc": "Gets one of the 4 saved wait lists."
-    },
-    {
-      "args": "word",
-      "command": "hangman",
-      "desc": "Starts a game of Hangman."
-    },
-    {
-      "args": "none",
-      "command": "xp",
-      "desc": "Displays Tastybot's XP."
-    },
-    {
-      "args": "level",
-      "command": "isanyone",
-      "desc": "Displays who is at that level."
-    },
-    {
-      "args": "level",
-      "command": "leveldelete",
-      "desc": "Sets the level required to post links in the chat."
-    },
-    {
-      "args": "none",
-      "command": "clearqueue",
-      "desc": "Clears Tastybot's add queue."
-    },
-    {
-      "args": "none",
-      "command": "joinclear",
-      "desc": "Clears the Join Queue."
-    },
-    {
-      "args": "name",
-      "command": "setslack",
-      "desc": "Sets your Slack name so messages are sent there instead."
-    },
-    {
-      "args": "none",
-      "command": "autoskip",
-      "desc": "Toggles Autoskip."
-    },
-    {
-      "args": "none, link",
-      "command": "label",
-      "desc": "Labels the current song or a provided link."
-    },
-    {
-      "args": "none",
-      "command": "labelcheck",
-      "desc": "Checks the current song's label."
-    },
-    {
-      "args": "term",
-      "command": "labelsearch",
-      "desc": "Looks for labels that contain the specified term."
-    }
-  ],
-  "manager": [
-    {
-      "args": "none",
-      "command": "reload",
-      "desc": "Reloads Tastybot."
-    },
-    {
-      "args": "none",
-      "command": "kill",
-      "desc": "This kills the bot."
-    },
-    {
-      "args": "???",
-      "command": "apocalypse",
-      "desc": "You don't want to know."
-    },
-    {
-      "args": "???",
-      "command": "lolomgwtfbbq",
-      "desc": "This one either."
-    },
-    {
-      "args": "none",
-      "command": "clearchat",
-      "desc": "Deletes everything in the chat."
-    },
-    {
-      "args": "@user",
-      "command": "ban",
-      "desc": "Permanently bans the user."
-    },
-    {
-      "args": "link, name",
-      "command": "blacklist",
-      "desc": "Adds the linked song to the Blacklist."
-    },
-    {
-      "args": "none",
-      "command": "unblacklist",
-      "desc": "Removes the linked song from the Blacklist."
-    },
-    {
-      "args": "none",
-      "command": "blbuffer",
-      "desc": "Checks the next song in the Blacklist buffer."
-    },
-    {
-      "args": "none",
-      "command": "podcast",
-      "desc": "Adds and moves Tastybot to the front of the wait list."
-    },
-    {
-      "args": "@user",
-      "command": "addmanager",
-      "desc": "Adds the user to the Manager list."
-    },
-    {
-      "args": "@user",
-      "command": "addbouncer",
-      "desc": "Adds the user to the Bouncer list."
-    },
-    {
-      "args": "@user",
-      "command": "addrdj",
-      "desc": "Adds the user to the RDJ list."
-    },
-    {
-      "args": "@user",
-      "command": "removemanager",
-      "desc": "Removes the user from the Manager list."
-    },
-    {
-      "args": "@user",
-      "command": "removebouncer",
-      "desc": "Removes the user from the Bouncer list."
-    },
-    {
-      "args": "@user",
-      "command": "removerdj",
-      "desc": "Removes the user from the RDJ list."
-    },
-    {
-      "args": "none",
-      "command": "stafflist",
-      "desc": "Displays who is on the Staff list."
-    },
-    {
-      "args": "none",
-      "command": "test",
-      "desc": "Test command."
-    },
-    {
-      "args": "none",
-      "command": "riglottery",
-      "desc": "Rigs the Lottery so that the user of the command wins next time."
-    },
-    {
-      "args": "none",
-      "command": "woot",
-      "desc": "Makes Tastybot woot the current song."
-    },
-    {
-      "args": "message",
-      "command": "slack",
-      "desc": "Sends a message on Slack via Slackbot."
-    },
-    {
-      "args": "minutes",
-      "command": "startraffle",
-      "desc": "Starts a Raffle that'll pick a winner after some minutes."
-    },
-    {
-      "args": "none",
-      "command": "lockguard",
-      "desc": "Toggles Lockguard."
-    },
-    {
-      "args": "none",
-      "command": "cycleguard",
-      "desc": "Toggles Cycleguard."
-    },
-    {
-      "args": "none",
-      "command": "timeguard",
-      "desc": "Toggles Timeguard."
-    },
-    {
-      "args": "various",
-      "command": "duels",
-      "desc": "Changes Duel settings."
-    },
-    {
-      "args": "various",
-      "command": "giveaways",
-      "desc": "Changes Giveaway settings."
-    },
-    {
-      "args": "none",
-      "command": "joinmode",
-      "desc": "Toggles Join Mode."
-    },
-    {
-      "args": "none",
-      "command": "lotteryday",
-      "desc": "Toggles Lottery Day."
-    },
-    {
-      "args": "various",
-      "command": "lottery",
-      "desc": "Changes Lottery settings."
-    },
-    {
-      "args": "none, limit, minutes",
-      "command": "antiafk",
-      "desc": "Changes AntiAFK settings."
-    },
-    {
-      "args": "various",
-      "command": "cmdsettings",
-      "desc": "Used for changing various command settings."
-    },
-    {
-      "args": "none",
-      "command": "eventmode",
-      "desc": "Toggles Event Mode, which is used for events."
-    },
-    {
-      "args": "number",
-      "command": "dice",
-      "desc": "Rolls a random number between 1 and number. Defaults to 6."
-    }
-  ],
-  "order": [
-    "user",
-    "rdj",
-    "bouncer",
-    "manager"
-  ],
-  "rdj": [
-    {
-      "args": "none",
-      "command": "op",
-      "desc": "Explains how to check if a song is overplayed."
-    },
-    {
-      "args": "none",
-      "command": "ba",
-      "desc": "Explains what a Brand Ambassador is."
-    },
-    {
-      "args": "none",
-      "command": "admin",
-      "desc": "Explains what an Admin is."
-    },
-    {
-      "args": "none",
-      "command": "rdj",
-      "desc": "Explains how we promote users to Resident DJ."
-    },
-    {
-      "args": "none",
-      "command": "cat",
-      "desc": "Explains how to get the cat avatar and why staff have it."
-    },
-    {
-      "args": "none",
-      "command": "bg",
-      "desc": "Explains why we have a custom background."
-    },
-    {
-      "args": "none",
-      "command": "lotteryhelp",
-      "desc": "Explains how the Lottery works."
-    },
-    {
-      "args": "none",
-      "command": "duelhelp",
-      "desc": "Explains how Duels work."
-    },
-    {
-      "args": "none",
-      "command": "history",
-      "desc": "Explains how to check the song history."
-    },
-    {
-      "args": "none",
-      "command": "waitlist",
-      "desc": "Explains how to join the wait list."
-    },
-    {
-      "args": "none",
-      "command": "staff",
-      "desc": "Explains how we choose users to become staff."
-    },
-    {
-      "args": "none",
-      "command": "community",
-      "desc": "Explains how to create a community."
-    },
-    {
-      "args": "none",
-      "command": "points",
-      "desc": "Explains how Plug Points and XP are earned."
-    },
-    {
-      "args": "none",
-      "command": "whylock",
-      "desc": "Explains why the wait list is locked."
-    },
-    {
-      "args": "none",
-      "command": "greyswaps",
-      "desc": "Explains that we don't do user-to-user swaps on the wait list."
-    },
-    {
-      "args": "none",
-      "command": "links",
-      "desc": "Explains how to send links in the chat."
-    },
-    {
-      "args": "none",
-      "command": "wlbuddyhelp",
-      "desc": "Explains how Wait List Buddies work."
-    },
-    {
-      "args": "none",
-      "command": "shush",
-      "desc": "Tell users to stop complaining and meh/mute the song."
-    },
-    {
-      "args": "none",
-      "command": "social",
-      "desc": "Sends Tastycat's social links."
-    },
-    {
-      "args": "none",
-      "command": "dchelp",
-      "desc": "Explains how a user can get their spot back after disconnecting."
-    },
-    {
-      "args": "none",
-      "command": "nsfw",
-      "desc": "Displays our definition of NSFW content."
-    },
-    {
-      "args": "none",
-      "command": "etahelp",
-      "desc": "Explains how a user can see how long until they DJ."
-    },
-    {
-      "args": "none",
-      "command": "xphelp",
-      "desc": "Explains how gaining XP works."
-    },
-    {
-      "args": "none",
-      "command": "namechange",
-      "desc": "Explains how to get a name change."
-    },
-    {
-      "args": "none",
-      "command": "gifts",
-      "desc": "Explains what gifts are and how to send them."
-    }
-  ],
-  "user": [
-    {
-      "args": "letter, word",
-      "command": "guess",
-      "desc": "Use when a round of Hangman has begun to guess a letter or word."
-    },
-    {
-      "args": "none",
-      "command": "theme",
-      "desc": "Explains our community's theme."
-    },
-    {
-      "args": "none",
-      "command": "rules",
-      "desc": "Sends a link to our rules."
-    },
-    {
-      "args": "none",
-      "command": "faq",
-      "desc": "Sends a link to our FAQ."
-    },
-    {
-      "args": "none",
-      "command": "emoji",
-      "desc": "Sends links to the emoji list and TastyPlug emotes list."
-    },
-    {
-      "args": "none",
-      "command": "commands",
-      "desc": "Sends a link to this page!"
-    },
-    {
-      "args": "none",
-      "command": "fb",
-      "desc": "Sends a link to our Facebook page."
-    },
-    {
-      "args": "none",
-      "command": "tastyplug",
-      "desc": "Sends a link to TastyPlug's page."
-    },
-    {
-      "args": "none",
-      "command": "eta",
-      "desc": "Shows you approximately how much time until you DJ."
-    },
-    {
-      "args": "none",
-      "command": "support",
-      "desc": "Sends a link to plug.dj support."
-    },
-    {
-      "args": "none",
-      "command": "tech",
-      "desc": "Sends a link to the plug.dj tech blog."
-    },
-    {
-      "args": "none",
-      "command": "plugblog",
-      "desc": "Sends a link to the plug.dj blog."
-    },
-    {
-      "args": "none",
-      "command": "blog",
-      "desc": "Sends a link to the Tastycat blog."
-    },
-    {
-      "args": "none",
-      "command": "song",
-      "desc": "Displays the current song's name."
-    },
-    {
-      "args": "none",
-      "command": "dc",
-      "desc": "Returns you to your spot if you lost it."
-    },
-    {
-      "args": "message",
-      "command": "afk",
-      "desc": "Sets an AFK message to display when you're away."
-    },
-    {
-      "args": "none",
-      "command": "promote",
-      "desc": "Lets staff members promote themselves back to Bouncer."
-    },
-    {
-      "args": "none",
-      "command": "demote",
-      "desc": "Lets staff members demote themselves if they are busy."
-    },
-    {
-      "args": "none",
-      "command": "joinqueue",
-      "desc": "Displays the users currently in the Join Queue."
-    },
-    {
-      "args": "@user",
-      "command": "cookie",
-      "desc": "Sends a cookie to a user!"
-    },
-    {
-      "args": "@user",
-      "command": "flower",
-      "desc": "Sends flowers to a user!"
-    },
-    {
-      "args": "@user",
-      "command": "food",
-      "desc": "Sends food to a user!"
-    },
-    {
-      "args": "@user",
-      "command": "shoe",
-      "desc": "Throws shoes at a user!"
-    },
-    {
-      "args": "@user",
-      "command": "love",
-      "desc": "Sends your love to a user!"
-    },
-    {
-      "args": "@user",
-      "command": "pizza",
-      "desc": "Sends pizza to a user!"
-    },
-    {
-      "args": "@user",
-      "command": "punch",
-      "desc": "Punches a user!"
-    },
-    {
-      "args": "@user",
-      "command": "fortune",
-      "desc": "Sends a fortune cookie to a user!"
-    },
-    {
-      "args": "none",
-      "command": "meow",
-      "desc": "Displays a random cat gif. Because cats."
-    },
-    {
-      "args": "excluded letters, length",
-      "command": "acronym",
-      "desc": "Generates an acronym of the specified length, without the excluded letters."
-    },
-    {
-      "args": "@user",
-      "command": "duel",
-      "desc": "Sends a Duel request to a user. It's time to d-d-d-d-duel!"
-    },
-    {
-      "args": "@user",
-      "command": "duelstats",
-      "desc": "Checks a user's Duel stats."
-    },
-    {
-      "args": "[none, losses, draws, opponents, last10], number",
-      "command": "duelranks",
-      "desc": "Displays the top [number] Duel users sorted by argument given."
-    },
-    {
-      "args": "none",
-      "command": "duelopt",
-      "desc": "Makes you opt in or out of Duels so others can't challenge you."
-    },
-    {
-      "args": "@user, find, divorce",
-      "command": "wlbuddy",
-      "desc": "Requests a user to be your Wait List Buddy, or find/divorce your current one."
-    },
-    {
-      "args": "number",
-      "command": "wlbuddyranks",
-      "desc": "Displays the top [number] Wait List Buddy pairs."
-    },
-    {
-      "args": "none",
-      "command": "giveaway",
-      "desc": "Starts a Giveaway where your spot is randomly given out."
-    },
-    {
-      "args": "none",
-      "command": "accept",
-      "desc": "Accepts something, like the Lottery!"
-    },
-    {
-      "args": "none",
-      "command": "decline",
-      "desc": "Declines something, like a Duel!"
-    },
-    {
-      "args": "none",
-      "command": "opt",
-      "desc": "Opts you in or out of the Lottery."
-    },
-    {
-      "args": "none",
-      "command": "join",
-      "desc": "Joins the Join Queue so Tastybot can add you to the wait list."
-    },
-    {
-      "args": "none",
-      "command": "leave",
-      "desc": "Leaves the Join Queue."
-    },
-    {
-      "args": "none",
-      "command": "raffle",
-      "desc": "Use this command to enter a Raffle when one is started!"
-    }
-  ]
+	"order": [
+		"user",
+		"rdj",
+		"bouncer",
+		"manager"
+	],
+	"user": [
+		{
+			"args": "<@user>",
+			"command": "cookie",
+			"desc": "Sends the specified user a random Cookie."
+		},
+		{
+			"args": "<@user>",
+			"command": "fortune",
+			"desc": "Sends the specified user a random Fortune."
+		},
+		{
+			"args": "<@user>",
+			"command": "food",
+			"desc": "Sends the specified user some food."
+		},
+		{
+			"args": "<@user>",
+			"command": "flowers",
+			"desc": "Sends the specified user flowers."
+		},
+		{
+			"args": "<@user>",
+			"command": "love",
+			"desc": "Sends the specified user some love."
+		},
+		{
+			"args": "<@user>",
+			"command": "pizza",
+			"desc": "Sends the specified user some pizza."
+		},
+		{
+			"args": "<@user>",
+			"command": "shoe",
+			"desc": "Throws a shoe at the specified user."
+		},
+		{
+			"args": "<@user>",
+			"command": "punch",
+			"desc": "Punches the specified user."
+		},
+		{
+			"args": "[lottery|duel|giveaway|wlbuddy]",
+			"command": "accept",
+			"desc": "Accepts something, like the Lottery, a Duel, Giveaway or Wait List Buddy invite."
+		},
+		{
+			"args": "[length] [excluded letters]",
+			"command": "acronym",
+			"desc": "Generates an acronym of the specified length, without the excluded letters."
+		},
+		{
+			"args": "[message]",
+			"command": "afk",
+			"desc": "Sets an AFK message to display when you're away."
+		},
+		{
+			"args": "none",
+			"command": "catfacts",
+			"desc": "Sends a random cat fact in chat."
+		},
+		{
+			"args": "none",
+			"command": "dc",
+			"desc": "Checks if you have disconnected and attempts to place you back."
+		},
+		{
+			"args": "[lottery|duel|giveaway|wlbuddy]",
+			"command": "decline",
+			"desc": "Decline something, like the Lottery, a Duel, Giveaway or Wait List Buddy invite."
+		},
+		{
+			"args": "[@user]]",
+			"command": "discord",
+			"desc": "Sends a link to Tastycat's Discord Server."
+		},
+		{
+			"args": "<@user>",
+			"command": "duel",
+			"desc": "Challenges someone to a duel. Winner is randomly picked, loser gets muted."
+		},
+		{
+			"args": "none",
+			"command": "eta",
+			"desc": "Displays how long it will take for you to reach the booth."
+		},
+		{
+			"args": "<letter|word>",
+			"command": "guess",
+			"desc": "Attempts to guess a letter or the full word of an active Hangman game."
+		},
+		{
+			"args": "none",
+			"command": "giveaway",
+			"desc": "Prompts you for confirmation before giving away your Wait List Position to a random user."
+		},
+		{
+			"args": "none",
+			"command": "join",
+			"desc": "Adds you to the Join Queue, if Join Mode is enabled."
+		},
+		{
+			"args": "none",
+			"command": "leave",
+			"desc": "Removes you from the Join Queue, if Join Mode is enabled."
+		},
+		{
+			"args": "none",
+			"command": "meow",
+			"desc": "Sends a random cat gif."
+		},
+		{
+			"args": "<cid <cid> <format>|link>",
+			"command": "opcheck",
+			"desc": "Checks if the specified media is Overplayed or not."
+		},
+		{
+			"args": "[lottery|duels]",
+			"command": "opt",
+			"desc": "Opts in (or out) of Lottery (default if no parameter is specified)."
+		},
+		{
+			"args": "none",
+			"command": "raffle",
+			"desc": "Joins a Raffle, if one is being held."
+		},
+		{
+			"args": "none",
+			"command": "song",
+			"desc": "Sends the song title in chat."
+		},
+		{
+			"args": "[@user|divorce|move]",
+			"command": "wlbuddy",
+			"desc": "Manages your own Wait List Buddy status. Can look up your Wait List Buddy, divorce them, or move you to them in the WL."
+		}
+	],
+	"rdj": [
+		{
+			"args": "[@user]",
+			"command": "duelhelp",
+			"desc": "Informative text on how Tastybot's Duels work."
+		},
+		{
+			"args": "[@user]",
+			"command": "admin",
+			"desc": "Informative text on what plug.dj Admins are."
+		},
+		{
+			"args": "[@user]",
+			"command": "ba",
+			"desc": "Informative text on what plug.dj Brand Ambassadors are."
+		},
+		{
+			"args": "[@user]",
+			"command": "bg",
+			"desc": "Informative text on why we have a custom background."
+		},
+		{
+			"args": "[@user]",
+			"command": "blog",
+			"desc": "Sends a link to Tastycat's news & blog."
+		},
+		{
+			"args": "[@user]",
+			"command": "cat",
+			"desc": "Informative text on why we have a custom avatar."
+		},
+		{
+			"args": "[@user]",
+			"command": "commands",
+			"desc": "Sends a link to this Command List."
+		},
+		{
+			"args": "[@user]",
+			"command": "community",
+			"desc": "Informative text on how to create your own community."
+		},
+		{
+			"args": "[@user]",
+			"command": "dchelp",
+			"desc": "Informative text on how to recover your Wait List Position."
+		},
+		{
+			"args": "[@user]",
+			"command": "emotes",
+			"desc": "Sends a link to plug.dj's Emoji List and to Tastyplug's Emote List."
+		},
+		{
+			"args": "[@user]",
+			"command": "faq",
+			"desc": "Sends a link to Tastycat's Frequently Asked Questions."
+		},
+		{
+			"args": "[@user]",
+			"command": "fb",
+			"desc": "Sends a link to Tastycat's Facebook Page."
+		},
+		{
+			"args": "[@user]",
+			"command": "gifts",
+			"desc": "Informative text on how plug.dj Gifts work."
+		},
+		{
+			"args": "[@user]",
+			"command": "greyswaps",
+			"desc": "Informative text on why we do not perform !swaps between 2 grey users."
+		},
+		{
+			"args": "[@user]",
+			"command": "history",
+			"desc": "Informative text on how to find the DJ History on plug.dj."
+		},
+		{
+			"args": "[@user]",
+			"command": "links",
+			"desc": "Informative text on why you can not send links when you first join the room."
+		},
+		{
+			"args": "[@user]",
+			"command": "lotteryhelp",
+			"desc": "Informative text on how the Lottery works."
+		},
+		{
+			"args": "[@user]",
+			"command": "namechanges",
+			"desc": "Informative text on how to change your username on plug.dj."
+		},
+		{
+			"args": "[@user]",
+			"command": "op",
+			"desc": "Informative text on how to check if your song is Overplayed."
+		},
+		{
+			"args": "[@user]",
+			"command": "points",
+			"desc": "Informative text on how plug.dj Points work."
+		},
+		{
+			"args": "[@user]",
+			"command": "plugblog",
+			"desc": "Sends a link to plug.dj's blog."
+		},
+		{
+			"args": "[@user]",
+			"command": "rdj",
+			"desc": "Informative text on how Tastycat Resident DJs are promoted."
+		},
+		{
+			"args": "[@user]",
+			"command": "rules",
+			"desc": "Sends a link to Tastycat's Chat & DJ Rules."
+		},
+		{
+			"args": "[@user]",
+			"command": "staff",
+			"desc": "Informative text on how Tastycat Staff is promoted."
+		},
+		{
+			"args": "[@user]",
+			"command": "shush",
+			"desc": "Meh, mute, shush. Don't complain."
+		},
+		{
+			"args": "[@user]",
+			"command": "social",
+			"desc": "All the Tastycat Social Links."
+		},
+		{
+			"args": "[@user]",
+			"command": "support",
+			"desc": "Sends a link to plug.dj's Support Desk."
+		},
+		{
+			"args": "[@user]",
+			"command": "tastyplug",
+			"desc": "Sends a link to Tastyplug."
+		},
+		{
+			"args": "[@user]",
+			"command": "tastyplug",
+			"desc": "Informative text on Tastycat's Music Theme."
+		},
+		{
+			"args": "[@user]",
+			"command": "xphelp",
+			"desc": "Informative text on how plug.dj XP Earnings work."
+		},
+		{
+			"args": "[@user]",
+			"command": "waitlist",
+			"desc": "Informative text on how to join the Wait List."
+		},
+		{
+			"args": "[@user]",
+			"command": "whylock",
+			"desc": "Informative text on why the Wait List is locked."
+		},
+		{
+			"args": "[@user]",
+			"command": "wlbuddyhelp",
+			"desc": "Informative text on how Tastybot's Wait List Buddies work."
+		}
+	],
+	"bouncer": [
+		{
+			"args": "[minutes]",
+			"command": "active",
+			"desc": "Checks how many people chatted in the past minutes."
+		},
+		{
+			"args": "<@user>",
+			"command": "autochat",
+			"desc": "Checks an user's messages to see if they're auto-chatting."
+		},
+		{
+			"args": "none",
+			"command": "autoskip",
+			"desc": "Toggles Autoskip. This will skip every song at 5s remaining, useful for advancing issues."
+		},
+		{
+			"args": "none",
+			"command": "clearqueue",
+			"desc": "Clears the Add Queue. This queue is used for lottery, !move and !dc"
+		},
+		{
+			"args": "none",
+			"command": "cycle",
+			"desc": "Enables DJ Cycle (why?)."
+		},
+		{
+			"args": "none",
+			"command": "darude",
+			"desc": "Enables Darude Spam Protection. No dudu's shall be posted."
+		},
+		{
+			"args": "<@user>",
+			"command": "delete",
+			"desc": "Deletes the specified user's chat messages."
+		},
+		{
+			"args": "none",
+			"command": "deleteemotes",
+			"desc": "Deletes all the chat messages containing an emote."
+		},
+		{
+			"args": "none",
+			"command": "deletelinks",
+			"desc": "Deletes all the chat messages containing a link."
+		},
+		{
+			"args": "<text>",
+			"command": "deletetext",
+			"desc": "Deletes all the chat messages containing the specified text."
+		},
+		{
+			"args": "none",
+			"command": "demote",
+			"desc": "Demotes yourself if you're on the Bouncer List."
+		},
+		{
+			"args": "<@user>",
+			"command": "disableafk",
+			"desc": "Disables the specified user's AFK Message."
+		},
+		{
+			"args": "<@user>",
+			"command": "execute",
+			"desc": "Executes the specified user."
+		},
+		{
+			"args": "[1|2|3|4]",
+			"command": "getlist",
+			"desc": "Tastybot DMs you one of the saved Wait Lists, if you're on Tastycat's Staff Slack."
+		},
+		{
+			"args": "<level>",
+			"command": "isanyone",
+			"desc": "Display which users have reached the specified level."
+		},
+		{
+			"args": "none",
+			"command": "joinclear",
+			"desc": "Clears the Join Queue. This queue is used for !join (Join Mode)."
+		},
+		{
+			"args": "none",
+			"command": "joinmode",
+			"desc": "Display which users are on the Join Queue."
+		},
+		{
+			"args": "<@user>",
+			"command": "jointime",
+			"desc": "Display the time that an user has been in the room for."
+		},
+		{
+			"args": "none",
+			"command": "keep",
+			"desc": "Tastybot will move the current DJ to the 1st Wait List Position after they finish DJing."
+		},
+		{
+			"args": "<@user> [duration]",
+			"command": "kick",
+			"desc": "Kicks the specified user for the specified duration. Duration defaults to 30 seconds."
+		},
+		{
+			"args": "<level>",
+			"command": "leveldelete",
+			"desc": "Toggles Level Delete (link deletion per level) to the specified level."
+		},
+		{
+			"args": "<@user>",
+			"command": "linkmute",
+			"desc": "Linkmutes the specified user. They will not be able to send links in chat."
+		},
+		{
+			"args": "<@user>",
+			"command": "linkunmute",
+			"desc": "Linkunmutes the specified user. They will now be able to send links in chat."
+		},
+		{
+			"args": "none",
+			"command": "lock",
+			"desc": "Locks the Wait List."
+		},
+		{
+			"args": "none",
+			"command": "unlock",
+			"desc": "Unlocks the Wait List."
+		},
+		{
+			"args": "none",
+			"command": "unlock",
+			"desc": "Unlocks the Wait List."
+		},
+		{
+			"args": "[level]",
+			"command": "lockdown",
+			"desc": "Lock down the chat so only users with the specified level or above can chat. Default level is 50, Staff is not affected."
+		},
+		{
+			"args": "[recent|op|mehs|title|404|mix|theme|rules|nsfw]",
+			"command": "lockskip",
+			"desc": "Lockskips (skips and moves to 3rd) the current DJ. You can specify a reasoning to be sent with it."
+		},
+		{
+			"args": "none",
+			"command": "motd",
+			"desc": "Sends the current MOtD in chat."
+		},
+		{
+			"args": "<@user> [position]",
+			"command": "move",
+			"desc": "Moves the specified user to the specified position. Position defaults to 50."
+		},
+		{
+			"args": "<@user> [duration]",
+			"command": "mute",
+			"desc": "Mutes the specified user for the specified position. Duration defaults to 15 minutes."
+		},
+		{
+			"args": "<@user>",
+			"command": "unmute",
+			"desc": "Unmutes the specified user."
+		},
+		{
+			"args": "none",
+			"command": "opcheck",
+			"desc": "Checks if the current media is Overplayed or not."
+		},
+		{
+			"args": "none",
+			"command": "ping",
+			"desc": "Pong?"
+		},
+		{
+			"args": "none",
+			"command": "promote",
+			"desc": "Promotes yourself if you're on the Bouncer List"
+		},
+		{
+			"args": "none",
+			"command": "queue",
+			"desc": "Displays which users are on the Queue. This queue is used for Lottery, !move and !dc."
+		},
+		{
+			"args": "<@user>",
+			"command": "remove",
+			"desc": "Removes the specified user from the Wait List or Booth."
+		},
+		{
+			"args": "none",
+			"command": "skip",
+			"desc": "Force skips the current DJ."
+		},
+		{
+			"args": "none",
+			"command": "status",
+			"desc": "Displays some of Tastybot's Setting status."
+		},
+		{
+			"args": "<@user> <@user>",
+			"command": "swap",
+			"desc": "Swaps the two specified users in the Wait List."
+		},
+		{
+			"args": "<@user>",
+			"command": "voteratio",
+			"desc": "Displays the specified user's vote ratio."
+		},
+		{
+			"args": "none",
+			"command": "xp",
+			"desc": "Displays how much XP Tastybot has currently."
+		}
+	],
+	"manager": [
+		{
+			"args": "???",
+			"command": "apocalypse",
+			"desc": "You don't want to know."
+		},
+		{
+			"args": "???",
+			"command": "lolomgwtfbbq",
+			"desc": "This one either."
+		},
+		{
+			"args": "[limit [minutes]|reset <@user>]",
+			"command": "antiafk",
+			"desc": "Manages AntiAFK settings. You can display/alter the limit, reset someone's AFK timer or toggle it."
+		},
+		{
+			"args": "<@user>",
+			"command": "ban",
+			"desc": "Permanently bans the specified user."
+		},
+		{
+			"args": "[link]",
+			"command": "blacklist",
+			"desc": "Blacklists the current song. If an URL is provided, that will be blacklisted instead."
+		},
+		{
+			"args": "<link>",
+			"command": "unblacklist",
+			"desc": "Removed the linked song from the Blacklist."
+		},
+		{
+			"args": "none",
+			"command": "clearchat",
+			"desc": "Clears the chat by deleting all messages."
+		},
+		{
+			"args": "none",
+			"command": "cycleguard",
+			"desc": "Toggles CycleGuard. When enabled, prevents DJ Cycle for staying on for longer than 10 minutes."
+		},
+		{
+			"args": "[cooldown [minutes]|mute [minutes]|reset]",
+			"command": "duels",
+			"desc": "Manages Duel settings. You can display/alter the cooldown and mute or reset the cooldown."
+		},
+		{
+			"args": "none",
+			"command": "eventmode",
+			"desc": "Toggles Event Mode. Wait List is locked until emptying, Join Mode and Time Guard are disabled."
+		},
+		{
+			"args": "none",
+			"command": "friendrequests",
+			"desc": "Displays how many Friend Requests Tastybot has (may cause some lag while it gathers the info)."
+		},
+		{
+			"args": "[cooldown [minutes]|position [number]|reset]",
+			"command": "duels",
+			"desc": "Manages Giveaways settings. You can display/alter the cooldown and required position or reset the cooldown."
+		},
+		{
+			"args": "none",
+			"command": "joinmode",
+			"desc": "Toggles Join Mode. When enabled, !join adds you to the Join Queue. Tastybot adds random users from the Join Queue to the WL."
+		},
+		{
+			"args": "none",
+			"command": "lockguard",
+			"desc": "Toggles LockGuard. When enabled, prevents the Wait List from staying locked for longer than 10 minutes."
+		},
+		{
+			"args": "[activate]",
+			"command": "lottery",
+			"desc": "Toggles the Hourly Lottery. Can activate it manually."
+		},
+		{
+			"args": "[activate]",
+			"command": "lottery",
+			"desc": "Toggles Lottery Day. Wait List is locked down to 10 users. Each song, Tastybot picks an active (in chat) user and adds to the Wait List."
+		},
+		{
+			"args": "<link>",
+			"command": "mix",
+			"desc": "Queue's up a mix from the specified link."
+		},
+		{
+			"args": "[toggle|[minutes]|[message]]",
+			"command": "motd",
+			"desc": "Manages the MOtD settings. Can toggle it on and off, set the interval or alter the message."
+		},
+		{
+			"args": "<episode number>",
+			"command": "podcast",
+			"desc": "Queue's up the Monstercat Podcast with the given episode number."
+		},
+		{
+			"args": "<start [minutes]>",
+			"command": "raffle",
+			"desc": "Starts a new Raffle, to be closed in the specified length. Defaults to 3 minutes."
+		},
+		{
+			"args": "none",
+			"command": "reload",
+			"desc": "Reloads Tastybot."
+		},
+		{
+			"args": "none",
+			"command": "riglottery",
+			"desc": "Rigs the Lottery."
+		},
+		{
+			"args": "<list|add <@user> <managers|bouncers|rdjs>|remove <@user>",
+			"command": "staff",
+			"desc": "Manages the Staff list. You can add, remove or list Staff by role."
+		},
+		{
+			"args": "none",
+			"command": "timeguard",
+			"desc": "Toggles TimeGuard. When enabled, prevents songs of over 10 minutes from being played."
+		},
+		{
+			"args": "none",
+			"command": "uptime",
+			"desc": "Displays the amount of time Tastybot has been running for."
+		},
+		{
+			"args": "none",
+			"command": "usercommands",
+			"desc": "Toggles User Commands."
+		}
+	]
 }
