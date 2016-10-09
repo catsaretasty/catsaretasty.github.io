@@ -7,42 +7,42 @@
 	],
 	"user": [
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "cookie",
 			"desc": "Sends the specified user a random Cookie."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "fortune",
 			"desc": "Sends the specified user a random Fortune."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "food",
 			"desc": "Sends the specified user some food."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "flowers",
 			"desc": "Sends the specified user flowers."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "love",
 			"desc": "Sends the specified user some love."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "pizza",
 			"desc": "Sends the specified user some pizza."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "shoe",
 			"desc": "Throws a shoe at the specified user."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "punch",
 			"desc": "Punches the specified user."
 		},
@@ -82,7 +82,7 @@
 			"desc": "Sends a link to Tastycat's Discord Server."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "duel",
 			"desc": "Challenges someone to a duel. Winner is randomly picked, loser gets muted."
 		},
@@ -92,7 +92,7 @@
 			"desc": "Displays how long it will take for you to reach the booth."
 		},
 		{
-			"args": "<letter|word>",
+			"args": "&lt;letter|word&gt;",
 			"command": "guess",
 			"desc": "Attempts to guess a letter or the full word of an active Hangman game."
 		},
@@ -117,7 +117,7 @@
 			"desc": "Sends a random cat gif."
 		},
 		{
-			"args": "<cid <cid> <format>|link>",
+			"args": "&lt;cid &lt;cid&gt; &lt;format&gt;|link&gt;",
 			"command": "opcheck",
 			"desc": "Checks if the specified media is Overplayed or not."
 		},
@@ -316,7 +316,7 @@
 			"desc": "Checks how many people chatted in the past minutes."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "autochat",
 			"desc": "Checks an user's messages to see if they're auto-chatting."
 		},
@@ -341,7 +341,7 @@
 			"desc": "Enables Darude Spam Protection. No dudu's shall be posted."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "delete",
 			"desc": "Deletes the specified user's chat messages."
 		},
@@ -356,7 +356,7 @@
 			"desc": "Deletes all the chat messages containing a link."
 		},
 		{
-			"args": "<text>",
+			"args": "&lt;text&gt;",
 			"command": "deletetext",
 			"desc": "Deletes all the chat messages containing the specified text."
 		},
@@ -366,12 +366,12 @@
 			"desc": "Demotes yourself if you're on the Bouncer List."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "disableafk",
 			"desc": "Disables the specified user's AFK Message."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "execute",
 			"desc": "Executes the specified user."
 		},
@@ -381,7 +381,7 @@
 			"desc": "Tastybot DMs you one of the saved Wait Lists, if you're on Tastycat's Staff Slack."
 		},
 		{
-			"args": "<level>",
+			"args": "&lt;level&gt;",
 			"command": "isanyone",
 			"desc": "Display which users have reached the specified level."
 		},
@@ -396,7 +396,7 @@
 			"desc": "Display which users are on the Join Queue."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "jointime",
 			"desc": "Display the time that an user has been in the room for."
 		},
@@ -406,22 +406,22 @@
 			"desc": "Tastybot will move the current DJ to the 1st Wait List Position after they finish DJing."
 		},
 		{
-			"args": "<@user> [duration]",
+			"args": "&lt;@user&gt; [duration]",
 			"command": "kick",
 			"desc": "Kicks the specified user for the specified duration. Duration defaults to 30 seconds."
 		},
 		{
-			"args": "<level>",
+			"args": "&lt;level&gt;",
 			"command": "leveldelete",
 			"desc": "Toggles Level Delete (link deletion per level) to the specified level."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "linkmute",
 			"desc": "Linkmutes the specified user. They will not be able to send links in chat."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "linkunmute",
 			"desc": "Linkunmutes the specified user. They will now be able to send links in chat."
 		},
@@ -456,17 +456,17 @@
 			"desc": "Sends the current MOtD in chat."
 		},
 		{
-			"args": "<@user> [position]",
+			"args": "&lt;@user&gt; [position]",
 			"command": "move",
 			"desc": "Moves the specified user to the specified position. Position defaults to 50."
 		},
 		{
-			"args": "<@user> [duration]",
+			"args": "&lt;@user&gt; [duration]",
 			"command": "mute",
 			"desc": "Mutes the specified user for the specified position. Duration defaults to 15 minutes."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "unmute",
 			"desc": "Unmutes the specified user."
 		},
@@ -491,7 +491,7 @@
 			"desc": "Displays which users are on the Queue. This queue is used for Lottery, !move and !dc."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "remove",
 			"desc": "Removes the specified user from the Wait List or Booth."
 		},
@@ -506,12 +506,12 @@
 			"desc": "Displays some of Tastybot's Setting status."
 		},
 		{
-			"args": "<@user> <@user>",
+			"args": "&lt;@user&gt; &lt;@user&gt;",
 			"command": "swap",
 			"desc": "Swaps the two specified users in the Wait List."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "voteratio",
 			"desc": "Displays the specified user's vote ratio."
 		},
@@ -533,12 +533,12 @@
 			"desc": "This one either."
 		},
 		{
-			"args": "[limit [minutes]|reset <@user>]",
+			"args": "[limit [minutes]|reset &lt;@user&gt;]",
 			"command": "antiafk",
 			"desc": "Manages AntiAFK settings. You can display/alter the limit, reset someone's AFK timer or toggle it."
 		},
 		{
-			"args": "<@user>",
+			"args": "&lt;@user&gt;",
 			"command": "ban",
 			"desc": "Permanently bans the specified user."
 		},
@@ -548,7 +548,7 @@
 			"desc": "Blacklists the current song. If an URL is provided, that will be blacklisted instead."
 		},
 		{
-			"args": "<link>",
+			"args": "&lt;link&gt;",
 			"command": "unblacklist",
 			"desc": "Removed the linked song from the Blacklist."
 		},
@@ -603,7 +603,7 @@
 			"desc": "Toggles Lottery Day. Wait List is locked down to 10 users. Each song, Tastybot picks an active (in chat) user and adds to the Wait List."
 		},
 		{
-			"args": "<link>",
+			"args": "&lt;link&gt;",
 			"command": "mix",
 			"desc": "Queue's up a mix from the specified link."
 		},
@@ -613,12 +613,12 @@
 			"desc": "Manages the MOtD settings. Can toggle it on and off, set the interval or alter the message."
 		},
 		{
-			"args": "<episode number>",
+			"args": "&lt;episode number&gt;",
 			"command": "podcast",
 			"desc": "Queue's up the Monstercat Podcast with the given episode number."
 		},
 		{
-			"args": "<start [minutes]>",
+			"args": "&lt;start [minutes]&gt;",
 			"command": "raffle",
 			"desc": "Starts a new Raffle, to be closed in the specified length. Defaults to 3 minutes."
 		},
@@ -633,7 +633,7 @@
 			"desc": "Rigs the Lottery."
 		},
 		{
-			"args": "<list|add <@user> <managers|bouncers|rdjs>|remove <@user>",
+			"args": "&lt;list|add &lt;@user&gt; &lt;managers|bouncers|rdjs|remove &lt;@user&gt;",
 			"command": "staff",
 			"desc": "Manages the Staff list. You can add, remove or list Staff by role."
 		},

@@ -3,7 +3,9 @@ title: Tastybot
 ---
 <section class="jumbotron">
     <h2>Tastybot</h2>
-    <p>Here's a list of Tastybot's commands.  We try to update this list as commands change, but it's not always possible.  Ask staff for help concerning commands!</p>
+    <p>Here's a list of Tastybot's commands.  We try to update this list as commands change, but it's not always possible.  <br />
+    Ask staff for help concerning commands!</p>
+    <p>Parameters between &lt;&gt; are required, between [] are optional and | indicates "or". Ex: add|remove.</p>
 </section>
 
 {% for role in site.data.tastybot-commands.order %}{% if role %}
@@ -13,7 +15,7 @@ title: Tastybot
     <thead>
         <tr>
             <th>Command</th>
-            <th>Arguments</th>
+            <th>Parameters</th>
             <th>Description</th>
         </tr>
     </thead>
