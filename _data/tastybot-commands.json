@@ -432,12 +432,7 @@
 		},
 		{
 			"args": "none",
-			"command": "unlock",
-			"desc": "Unlocks the Wait List."
-		},
-		{
-			"args": "none",
-			"command": "unlock",
+			"command": "lock",
 			"desc": "Unlocks the Wait List."
 		},
 		{
@@ -599,7 +594,7 @@
 		},
 		{
 			"args": "[activate]",
-			"command": "lottery",
+			"command": "lotteryday",
 			"desc": "Toggles Lottery Day. Wait List is locked down to 10 users. Each song, Tastybot picks an active (in chat) user and adds to the Wait List."
 		},
 		{
