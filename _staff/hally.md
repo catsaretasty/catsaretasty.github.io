@@ -1,5 +1,5 @@
 ---
-name: H A L L Y
+name: H a l l y
 id: hally
 ---
 So yeh, i'm known as H a l l y, Manager on Tastycat. I also make designs and artwork from time to time.
