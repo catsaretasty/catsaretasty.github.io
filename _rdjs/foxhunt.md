@@ -1,6 +1,6 @@
 ---
 title: Foxhunt
-name: Foxhunt
+name: foxhunt
 soundcloud: foxhunt-official
 ---
 
