@@ -1,6 +1,6 @@
 ---
 title: Martyr
-name: Martyr
+name: martyr
 soundcloud: officialmartyr
 ---
 19 year old Hardstyle producer from the USA;
