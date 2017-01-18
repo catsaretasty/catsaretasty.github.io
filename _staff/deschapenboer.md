@@ -2,4 +2,4 @@
 name: DeSchapenBoer
 id: deschapenboer
 ---
-I like music
+My curls posses magic powers. And I like cats.
