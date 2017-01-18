@@ -1,6 +1,6 @@
 ---
 title: Hurks
-name: Hurks
+name: hurks
 soundcloud: hurksmusic
 ---
 
