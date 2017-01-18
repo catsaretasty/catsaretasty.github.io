@@ -1,6 +1,6 @@
 ---
 name: Izuko
-id: hally
+id: izuko
 ---
 Hi Tastykittens, here you can find a bit of info about me. 
 
