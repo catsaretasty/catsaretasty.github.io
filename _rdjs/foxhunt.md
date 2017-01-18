@@ -11,4 +11,4 @@ TastyNetwork artist.
 * [YouTube](https://www.youtube.com/channel/UC0immAGc9pbrswt_gbb__Ug)
 * [Twitter](https://twitter.com/FoxhuntOfficial)
 * [Soundcloud](https://soundcloud.com/foxhunt-official)
-* [Bandcamp] (https://foxhuntelectronic.bandcamp.com/)
+* [Bandcamp](https://foxhuntelectronic.bandcamp.com/)
