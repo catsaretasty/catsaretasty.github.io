@@ -2,4 +2,4 @@
 name: NDA
 id: nda
 ---
-I like music
+Artsy guy. I try to create in every domain.
