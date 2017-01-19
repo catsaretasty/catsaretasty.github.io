@@ -9,4 +9,4 @@ My personality is kindhearted, Willing to help. I can be hyperactive at times bu
 
 Music i dislike is opera, Things you can wake me up for is about anything (dont sleep that much anyways)
 
-[Twitter](https://twitter.com/IzukoNamazaki)
+[Twitter](https://twitter.com/IzukoNamazaki) | [Steam](http://steamcommunity.com/id/VenVaiXIII)
