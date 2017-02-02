@@ -10,10 +10,11 @@ Live performance of his music has always been an important angle, with live inst
 
 
 Formerly : Sian Area
-More info email me at [octaproduction@gmail.com](mailto:octaproduction@gmail.com)
+More info email me at [octaproduction@gmail.com](mailto:octaproduction@gmail.com) <br>
+For bookings or events email at [tommie@kinphonic.com](mailto:tommie@kinphonic.com)
+
 
 * [Facebook](https://www.facebook.com/eluunofficial)
 * [Twitter](https://twitter.com/eluunofficial)
 * [Instagram](https://www.instagram.com/eluunofficial/)
-* [Youtube](http://www.youtube.com/zentraofficial)
 * [Soundcloud](https://soundcloud.com/eluunofficial)
