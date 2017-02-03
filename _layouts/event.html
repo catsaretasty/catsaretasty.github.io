@@ -15,7 +15,7 @@
     {% for static_file in site.static_files %}
     {% capture thumb_url %}/images/events/thumb/{{ page.image }}{% endcapture %}
     {% if static_file.path == thumb_url %}
-    {% assign thumbimage = true %}
+    {% assign thumbimage = false %}
     {% endif %}
     {% capture full_url %}/images/events/{{ page.image }}{% endcapture %}
     {% if static_file.path == full_url %}
@@ -33,7 +33,7 @@
 </div>
 {% if fullimage and thumbimage%}
 <script type="text/javascript">
-    var thumbnail = true;
+    var thumbnail = false;
     function swapImage(img){
         img.src = thumbnail ? '{{ full_url | prepend: site.baseurl | prepend: site.url }}' : '{{ thumb_url | prepend: site.baseurl | prepend: site.url }}';
         thumbnail = !thumbnail;
