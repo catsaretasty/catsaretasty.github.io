@@ -1,9 +1,10 @@
 ---
-title: Tastycat Showcase: Desembra
+title: Tastycat Shorcase - Dsembra
 date: 2017-03-04 21:00:00
-image: desembra-showcase.png
+image: dsembra-showcase.png
 ---
-Join us with Desembra to listen to his older, newest and unreleased tracks.
-We will also be having a Q&A session. Get your questions ready. We hope to see you around!
+Join us with Dsembra to listen to his older, newest and unreleased tracks. We will also be having a Q&A session so get your questions ready!
 
-04-March-2017 |  9pm GMT | 4pm EST | 1pm PST
+Join us at [https://plug.dj/tastycat](https://plug.dj/tastycat)
+
+Sunday, March 4th at 9pm GMT | 4pm PST | 1am EST
