@@ -1,7 +1,7 @@
 ---
 title: Tastycat Shorcase - Desmbra
 date: 2017-03-04 21:00:00
-image: desmbra-showcase.png
+image: desembra-showcase.png
 ---
 Join us with Dsembra to listen to his older, newest and unreleased tracks. We will also be having a Q&A session so get your questions ready!
 
