@@ -1,5 +1,5 @@
 ---
-title: Tastycat Shorcase - Desmbra
+title: Tastycat Showcase - Desmbra
 date: 2017-03-04 21:00:00
 image: desembra-showcase.png
 ---
