@@ -14,8 +14,8 @@ name: dj
 
 Using [Tastyplug’s](https://tastyplug.tastycat.org) **/opcheck** command will show you how often a song has been played the past day/week/month. If your song that is currently playing fits the criteria below, staff will be allowed to lockskip or skip it.
 
-• A song that has already been played **once** today should be avoided being played again.
+  • A song that has already been played **once** today should be avoided being played again.
 
-• A song that has been played **3 times** this week is not allowed to be played.
+  • A song that has been played **3 times** this week is not allowed to be played.
 
-• A song that has been played **10 times** this month is not allowed to be played.
+  • A song that has been played **10 times** this month is not allowed to be played.
