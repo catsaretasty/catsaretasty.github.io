@@ -5,9 +5,9 @@ I have been banned from Tastycat and I don't know why. How do I get unbanned?
 
 Staff may ban a user that has:
 
- * Continuously broken the [room rules](/rules) despite being warned.
+ • Continuously broken the [room rules](/rules) despite being warned.
 
- * Has done something serious such as posting a NSFW link into chat.
+ • Has done something serious such as posting a NSFW link into chat.
 
 
 If you feel you have been wrongly banned by one of our staff, you can send us a message on [Facebook](https://www.facebook.com/TastycatPlugdj).
