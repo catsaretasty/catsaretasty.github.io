@@ -5,7 +5,7 @@ How do I gain XP and PlugPoints and what do they do?
 
 • How to gain XP:
  • You gain XP every 5 minutes that you spend on the site, up to a maximum of 6 hours per day. After 6 you will reach your daily XP cap, daily XP caps reset at midnight GMT.
- • XP helps you to level up! Leveling will let you unlock more avatars and site features!
+• XP helps you to level up! Leveling will let you unlock more avatars and site features!
  
 
 • How to gain PlugPoints:
