@@ -1,7 +1,7 @@
 ---
 name: dj
 ---
-1. **We only allow EDM (Electronic Dance Music). What is EDM? For info, [click here](http://en.wikipedia.org/wiki/List_of_electronic_music_genres)**
+1. **We only allow EDM (Electronic Dance Music). What is EDM? For info, [click here](https://en.wikipedia.org/wiki/Electronic_dance_music)**
 2. The song length limit is 10 minutes. Anything longer than this will be automatically skipped.
 3. Playing mixes is not allowed. This means videos that play several songs sequentially. [Here](https://www.youtube.com/watch?v=SFu2DfPDGeU) is an example. Mashups and remixes are allowed to be played.
 4. Songs that are on the history can not be played. [Here](http://i.imgur.com/Fkpjp5H.png) is how you can check the history.
