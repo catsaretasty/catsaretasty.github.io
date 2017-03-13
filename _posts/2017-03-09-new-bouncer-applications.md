@@ -10,3 +10,5 @@ You can fill in your own application by clicking the button on our [homepage](ht
 Please keep in mind we will be reviewing your application in the following weeks, so *DO NOT* ask for results until then.
 
 Pay attention to Discord and/or your Email, because that is how we plan to contact you, if needed.
+
+You have until 23rd of March to fill in your application.
