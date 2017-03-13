@@ -11,4 +11,4 @@ Please keep in mind we will be reviewing your application in the following weeks
 
 Pay attention to Discord and/or your Email, because that is how we plan to contact you, if needed.
 
-You have until 23rd of March to fill in your application.
+<strong>You have until 23rd of March to fill in your application.</strong>
