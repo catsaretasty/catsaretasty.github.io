@@ -285,7 +285,7 @@
 		},
 		{
 			"args": "[@user]",
-			"command": "tastyplug",
+			"command": "theme",
 			"desc": "Informative text on Tastycat's Music Theme."
 		},
 		{
