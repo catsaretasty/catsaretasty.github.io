@@ -1,5 +1,5 @@
 ---
-name: Nishikigoi
+name: Koi
 id: koi
 ---
 
