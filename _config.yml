@@ -1,14 +1,15 @@
-timezone: UTC
+timezone: Pacific/Auckland
 encoding: utf-8
 title: Tastycat
 url: https://catsaretasty.github.io
 
+# Staff and RDJ collections are dormant: set output to true to publish their pages again.
 collections:
   rdjs:
-    output: true
+    output: false
     permalink: /rdj/:path/
   staff:
-      output: true
+      output: false
       permalink: /staff/:path/
   rules:
       output: false
@@ -47,9 +48,11 @@ defaults:
 exclude:
 - CNAME
 - Gemfile
+- Gemfile.lock
 - CONTRIBUTING.md
 - LICENSE
 - README.md
+- scripts
 
-gems:
+plugins:
   - jekyll-sitemap

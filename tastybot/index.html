@@ -22,7 +22,13 @@ title: Tastybot
     <tbody>
         {% for command in commands %}
         <tr id="{{command.command}}">
-            <td>!{{command.command}}</td>
+            {% comment %} Command name, with its aliases on a line below when it has any. {% endcomment %}
+            <td>
+                <span class="command-name">!{{command.command}}</span>
+                {% if command.aliases.size > 0 %}
+                <span class="command-aliases">{% for alias in command.aliases %}!{{ alias | escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+                {% endif %}
+            </td>
             <td>{{command.args}}</td>
             <td>{{command.desc}}</td>
         </tr>
@@ -30,4 +36,6 @@ title: Tastybot
     </tbody>
 </table>
 {% endif %}{% endfor %}
-<p class="u-center">©2014-{{ site.time | date: '%y' }} Fungus (Olivier Houle).</p>
+{% comment %} Copyright year range: starts at 2026 and extends to the build year once it is later. {% endcomment %}
+{% assign build_year = site.time | date: '%Y' %}
+<p class="u-center">©2026{% if build_year != '2026' %}-{{ build_year }}{% endif %} Nodle. Based on the original Tastybot (2014-2020) by Fungus (Olivier Houle).</p>

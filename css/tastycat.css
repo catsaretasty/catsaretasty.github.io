@@ -673,6 +673,19 @@ hr {
 .social a {
     display:inline-block;
     margin:1rem;
+    color:#222;
+}
+
+/* Social icons: inline SVGs sized to match the text and coloured like the nav links. */
+.social svg {
+    width:3.2rem;
+    height:3.2rem;
+    fill:currentColor;
+    vertical-align:middle;
+}
+
+.social a:hover {
+    color:#0FA0CE;
 }
 
 @media (max-width: 550px) {
@@ -680,6 +693,19 @@ hr {
         border-bottom: 1px solid #eee;
         margin-bottom: 3rem;
     }
+
+    /* A lone news block has nothing stacked below it, so it needs no divider. */
+    .news.solo {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}
+
+/* News or events block shown without its partner: stop floating and centre it in the row. */
+.column.solo {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .faq {
@@ -701,6 +727,17 @@ hr {
 
 .commands td:nth-of-type(1) {
     min-width: 12rem
+}
+
+/* Command cell: bold command name, aliases on their own muted line below. */
+.commands .command-name {
+    font-weight: 600;
+}
+
+.commands .command-aliases {
+    display: block;
+    color: #777;
+    font-size: 0.9em;
 }
 
 .commands td:nth-of-type(2) {

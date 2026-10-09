@@ -1,88 +1,93 @@
 # Contributing
-## General Naming Guidelines
-In the formatting data of posts and other information (the `---` block at the top of the file), naming conventions matter!
+## Building Locally
+GitHub Pages builds and publishes the site on every push to `master`. To preview changes first, install
+[Ruby](https://www.ruby-lang.org/) with Bundler, then run one of the scripts in `scripts/` from anywhere.
+Missing gems are installed automatically by the PowerShell script; on Linux or macOS run `bundle install` once first.
 
-Feel free to use any sane way to write `title:` values, but `name:` and `author:` values **NEED** to be
-all lowercase with no spaces or special characters besides `-`.  i.e. only `a-z` and `-`.
+| Command | Result |
+| --- | --- |
+| `.\scripts\build.ps1` | One-off build into `_site` |
+| `.\scripts\build.ps1 -Serve` | Preview at http://127.0.0.1:4000, rebuilt on every change |
+| `sh scripts/build.sh` | One-off build into `_site` (Linux or macOS) |
 
-This all lowercase, no space naming convention is **also** required for filenames!
-
-### File Formats
-All of these `.md` files you are creating are slightly modified markdown files.
-There is a YAML header at the top, which looks like:
+## File Format
+Content files are markdown with a YAML header at the top, between two `---` lines.
+Everything below the header is plain markdown.
 ```
 ---
-title: example markdown file
-name: git
+title: Example Title
 ---
+Body text in markdown.
 ```
 
-Everything below the header is evaluated as a pure markdown file; so everything is markdown after the `---` header
+* Filenames: lowercase letters, digits and `-` only.
+* `title:` values can be written any sane way.
+* `name:` values follow the filename rule.
+* Dates use the format `2026-01-31 17:00:00` and are NZ time.
+* Posts and events dated in the future stay hidden until that time.
 
-### Add an event
-To create an event, consider the following:
+## Add a news post
+* Create `_posts/YYYY-MM-DD-[slug].md`, where the date is the post date.
+* The home page shows the latest five posts; `/news/` shows all of them.
 
-* create a unique file in the `_events` folder
-* add the image poster to `images/events` with a unique filename
-* put the filename (only the filename, not any of the path) in the `image:` value of the markdown file
-* put a 100x100 image in the `images/events/thumb` folder with the same name as the event poster
-* make sure your date follows the format of `2015-01-31 17:00:00`
-
-example event: `_events/example.md`
+example post: `_posts/2026-01-31-example-post.md`
 ```
 ---
-title: example event
-date: 2015-01-31 17:00:00
-image: default.jpg (can be png also)
+title: Example Post
+date: 2026-01-31 17:00:00
 ---
-event message here.  this can be blank, a senctence long, or a full essay.
-just remember that everything below the --- section is a markdown file.
+Post text here.
 ```
 
+## Add an event
+* Create `_events/[event].md`.
+* Optional poster: add it to `images/events`, and a 100x100 copy with the same filename to `images/events/thumb`.
+  Put the filename only (no path) in `image:`.
+* Without a thumbnail the default one is used. The full poster shows on the event page only when both files exist.
+* The home page shows the latest four events; `/news/` shows all of them.
+
+example event: `_events/example-event.md`
+```
+---
+title: Example Event
+date: 2026-01-31 17:00:00
+image: example-event.png
+---
+Event text here. It can be blank, a sentence, or a full essay.
+```
+
+## Resident DJ and Staff pages
+These sections are currently switched off. To switch one back on:
+
+* set `output: true` for its collection (`rdjs` or `staff`) in `_config.yml`
+* set `published: true` in `rdj/index.html` or `staff/index.html`
+* add its link back to `_includes/header.html`
 
 ### Add a RDJ bio
-To create a rdj bio, you need do to the following things:
+* Create `_rdjs/[artist].md`.
+* Optional logo: `images/rdj/[artist].png`, preferably all-white. Without one the default is used.
 
-* create a file in the `_rdjs` directory called `[artist].md`.
-* add their logo to `images/rdj` directory as `[artist].png` (optional, and preferred all-white)
-* fill out the file.  use any other existing file as a guideline for yours.
-* make sure you put their soundcloud id in the `soundcloud:` value
-
-example rdj: `_rdjs/next-big-hit.md`
+example rdj: `_rdjs/example-artist.md`
 ```
 ---
-title: The Next Big Hit
-name: next-big-hit
-soundcloud: next-big-hit-official
+title: Example Artist
+name: example-artist
 ---
-I am the next big hit.  you will listen to my music until your ears bleed.
+Bio text here.
 ```
 
 ### Add a staff bio
-To create a staff bio, you need to do the following:
+* Create `_staff/[staff].md`.
+* Optional photo: `images/staff/[staff].jpg`. Without one the default is used.
 
-* create a file in the `_staff` directory called `[staff].md`.
-* add their image to `images/staff` directory as `[staff].jpg` (optional)
-* fill out the file.  use any other existing file as a guideline for yours.
-
-example staff: `_staff/git.md`
+example staff: `_staff/example-staff.md`
 ```
 ---
-name: FAT32
-id: rowan
+name: Example Staff
 ---
-i like to ban people when im angry.
-
-i like to ban people when im bored.
-
-i like to ban people when im sad.
-
-i like to ban people.
-
-i will ban users
-when i feel like banning them
-fear me i am fat
+Bio text here.
 ```
 
-### Tastybot
-To update the commands and descriptions, place the generated json file at `data/tastybot-commands.json`.
+## Tastybot
+`_data/tastybot-commands.json` drives the `/tastybot` page. It is generated from the TastyBot command registry;
+replace the whole file with a newly generated one rather than editing it by hand.

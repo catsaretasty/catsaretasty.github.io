@@ -7,9 +7,14 @@ title: News
 </section>
 <div class="row">
 
-    <div id="news" class="one-half column news">
+    {% comment %} Each column renders only when its list has entries. A column with no partner gets the "solo" class, which centres it in the row. {% endcomment %}
+    {% assign solo_class = "" %}
+    {% if site.posts.size == 0 or site.events.size == 0 %}{% assign solo_class = " solo" %}{% endif %}
+    {% if site.posts.size > 0 %}
+    <div id="news" class="one-half column news{{ solo_class }}">
         <h3 class="u-center">News and Updates</h3>
 
+        {% comment %} Every post, newest first. {% endcomment %}
         {% for post in site.posts %}
         <div>
             <span>{{ post.date | date: "%B %e, %Y" }}</span>
@@ -17,8 +22,11 @@ title: News
         </div>
         {% endfor %}
     </div>
-    <div id="events" class="one-half column events">
+    {% endif %}
+    {% if site.events.size > 0 %}
+    <div id="events" class="one-half column events{{ solo_class }}">
         <h3 class="u-center">Events</h3>
+        {% comment %} Every event, newest first, each with its thumbnail or the default one. {% endcomment %}
         {% assign events = site.events | sort: 'date' | reverse %}
         {% for event in events %}
         <a class="event u-cf" href="{{ event.url | prepend: site.baseurl | prepend: site.url }}">
@@ -34,7 +42,7 @@ title: News
             {% endfor %}
             <div class="event-logo u-pull-right">
                 {% if customimage %}
-                <img src="{{ image_url prepend: site.baseurl | prepend: site.url }}"/>
+                <img src="{{ image_url | prepend: site.baseurl | prepend: site.url }}"/>
                 {% else %}
                 <img src="{{ site.baseurl | prepend: site.url }}/images/events/thumb/default.png"/>
                 {% endif %}
@@ -44,4 +52,5 @@ title: News
         {% endfor %}
 
     </div>
+    {% endif %}
 </div>

@@ -10,7 +10,7 @@ Staff may ban a user that has:
  • Has done something serious such as posting a NSFW link into chat.
 
 
-If you feel you have been wrongly banned by one of our staff, you can send us a message on [Facebook](https://www.facebook.com/TastycatPlugdj).
+If you feel you have been wrongly banned by one of our staff, you can send us a message on [Discord](https://discord.tastycat.org).
 
 
 We will do our best to respond to your ban appeal as soon as we are able to do so!

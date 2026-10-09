@@ -4,13 +4,22 @@
     <img src="{{ site.baseurl | prepend: site.url }}/images/tastycat.png">
 </section>
 
-<h1 class="u-center">Come play with us on <a href="https://plug.dj/tastycat">plug.dj</a>!</h1>
-<h1 class="u-center">Join our <a href="https://discord.gg/0XrD4zABodgCIUzk">DISCORD</a> server.</h1>
+<h1 class="u-center">Come play with us on <a href="https://wavez.fm/~/tastycat">wavez.fm</a>!</h1>
+<h1 class="u-center">Join our <a href="https://discord.tastycat.org">DISCORD</a> server.</h1>
 
+{% comment %} News and Events blocks render only when their list has entries. {% endcomment %}
+{% assign post_count = site.posts.size %}
+{% assign event_count = site.events.size %}
+{% if post_count > 0 or event_count > 0 %}
+{% comment %} A block with no partner gets the "solo" class, which centres it in the row. {% endcomment %}
+{% assign solo_class = "" %}
+{% if post_count == 0 or event_count == 0 %}{% assign solo_class = " solo" %}{% endif %}
 <div class="row">
-    <div class="one-half column news">
+    {% if post_count > 0 %}
+    <div class="one-half column news{{ solo_class }}">
         <h3 class="u-center">News and Updates</h3>
 
+        {% comment %} Latest five posts, newest first. {% endcomment %}
         {% for post in site.posts limit:5 %}
         <div>
             <span>{{ post.date | date: "%B %e, %Y" }}</span>
@@ -19,8 +28,11 @@
         {% endfor %}
         <p class="u-center"><a href="{{ site.baseurl | prepend: site.url }}/news/#news">view all posts</a></p>
     </div>
-    <div class="one-half column events">
+    {% endif %}
+    {% if event_count > 0 %}
+    <div class="one-half column events{{ solo_class }}">
         <h3 class="u-center">Events</h3>
+        {% comment %} Latest four events, newest first, each with its thumbnail or the default one. {% endcomment %}
         {% assign events = site.events | sort: 'date' | reverse %}
         {% for event in events limit:4 %}
         <a class="event u-cf" href="{{ event.url | prepend: site.baseurl | prepend: site.url }}">
@@ -46,19 +58,18 @@
         {% endfor %}
         <p id="all-events" class="u-center"><a href="{{ site.baseurl | prepend: site.url }}/news/#events">view all events</a></p>
     </div>
+    {% endif %}
 </div>
+{% endif %}
 <hr />
 <div class="row">
     <div class="u-full-width u-center">
-        <h3>Contact</h3>
-        <p>contact us at <a href="mailto:tastycathq@gmail.com">tastycathq@gmail.com</a></p>
-        <p>Feel free to check out our other social media.</p>
+        <h3>Socials</h3>
+        {% comment %} One icon link per entry in _data/socials.yml; the SVG is inlined from _includes/icons. {% endcomment %}
         <div class="social">
-            <a href="https://www.facebook.com/TastycatPlugdj">Facebook</a>
-            <a href="https://steamcommunity.com/groups/TastyCatHQ">Steam</a>
-            <a href="https://twitter.com/TastycatHQ">Twitter</a>
-            <a href="https://www.youtube.com/channel/UCKp05nVAaMZfjo7_W2y2n8g">YouTube</a>
-            <a href="https://soundcloud.com/tastycat">Soundcloud</a>
+            {% for social in site.data.socials %}
+            <a href="{{ social.url }}" aria-label="{{ social.name }}">{% include icons/{{ social.icon }} %}</a>
+            {% endfor %}
         </div>
     </div>
 </div>

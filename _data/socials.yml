@@ -1,0 +1,20 @@
+# Social links shown on the home page, in display order.
+# name: accessible label; url: profile link; icon: SVG file name in _includes/icons.
+- name: Facebook
+  url: https://www.facebook.com/tastycat.org/
+  icon: facebook.svg
+- name: X
+  url: https://x.com/TastycatHQ
+  icon: x.svg
+- name: Steam
+  url: https://steamcommunity.com/groups/TastycatHQ
+  icon: steam.svg
+- name: YouTube
+  url: https://www.youtube.com/@TastycatHQ
+  icon: youtube.svg
+- name: SoundCloud
+  url: https://soundcloud.com/tastycat
+  icon: soundcloud.svg
+- name: TikTok
+  url: https://www.tiktok.com/@tastycat.org
+  icon: tiktok.svg
