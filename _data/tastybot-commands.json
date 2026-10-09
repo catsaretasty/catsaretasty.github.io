@@ -32,10 +32,25 @@
 			"desc": "Sets an AFK message to display when you're away."
 		},
 		{
+			"command": "blog",
+			"aliases": [],
+			"args": "[@user]",
+			"desc": "Sends a link to Tastycat's news &amp; blog."
+		},
+		{
 			"command": "catfacts",
 			"aliases": [],
 			"args": "",
 			"desc": "Sends a random cat fact in chat."
+		},
+		{
+			"command": "commands",
+			"aliases": [
+				"help",
+				"h"
+			],
+			"args": "[@user]",
+			"desc": "Sends a link to this Command List."
 		},
 		{
 			"command": "cookie",
@@ -71,6 +86,12 @@
 			"aliases": [],
 			"args": "&lt;user&gt;",
 			"desc": "Challenges someone to a duel. Winner is randomly picked, loser gets muted."
+		},
+		{
+			"command": "faq",
+			"aliases": [],
+			"args": "[@user]",
+			"desc": "Sends a link to Tastycat's Frequently Asked Questions."
 		},
 		{
 			"command": "fb",
@@ -174,6 +195,14 @@
 			"aliases": [],
 			"args": "",
 			"desc": "Joins a Raffle, if one is being held."
+		},
+		{
+			"command": "rules",
+			"aliases": [
+				"rule"
+			],
+			"args": "[@user]",
+			"desc": "Sends a link to Tastycat's Chat &amp; DJ Rules."
 		},
 		{
 			"command": "shoe",
@@ -321,6 +350,12 @@
 			"aliases": [],
 			"args": "[@user]",
 			"desc": "Meh, mute, shush. Don't complain."
+		},
+		{
+			"command": "social",
+			"aliases": [],
+			"args": "[@user]",
+			"desc": "All the Tastycat Social Links."
 		},
 		{
 			"command": "staff",
