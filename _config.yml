@@ -1,7 +1,8 @@
 timezone: Pacific/Auckland
 encoding: utf-8
 title: Tastycat
-url: https://catsaretasty.github.io
+description: "Your live music-sharing community, now plugged in wavez.fm."
+url: https://tastycat.org
 
 # Staff and RDJ collections are dormant: set output to true to publish their pages again.
 collections:
