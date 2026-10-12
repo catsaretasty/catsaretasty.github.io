@@ -223,6 +223,15 @@
 			"desc": "Sends a link to Wavez Support."
 		},
 		{
+			"command": "tastyplug",
+			"aliases": [
+				"tp",
+				"autowoot"
+			],
+			"args": "[@user]",
+			"desc": "Sends a link to Tastyplug."
+		},
+		{
 			"command": "theme",
 			"aliases": [],
 			"args": "[@user]",
