@@ -782,7 +782,7 @@ hr {
         max-width: none;
     }
 
-    .commands th:first-child, td:first-child {
+    .commands th:first-child, .commands td:first-child {
         padding-left: 10rem;
     }
 
@@ -808,6 +808,45 @@ hr {
     .commands td:nth-of-type(3):before {
         content: "Description";
     }
+}
+
+/* tastyplug
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Chat line samples are long; let them wrap instead of overflowing narrow screens. */
+.tastyplug code {
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+/* Feature group headings sit closer to their content than page-level headings. */
+.tastyplug h5 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Section headings get space above them to separate sections. */
+.tastyplug h3 {
+    margin-top: 5rem;
+}
+
+/* 404 page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Tastycat logo, shrunk and tipped over. */
+.not-found img {
+    max-width: 24rem;
+    transform: rotate(-12deg);
+    margin-bottom: 2rem;
+}
+
+.not-found h1 {
+    font-size: 9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.not-found .button {
+    margin: 0 .5rem 1rem;
 }
 
 /* userlist

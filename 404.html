@@ -1,0 +1,18 @@
+---
+title: Page not found
+permalink: /404.html
+---
+{% comment %}
+GitHub Pages serves this page for any missing path, so every link and image uses
+an absolute URL built from the site URL rather than a relative path.
+{% endcomment %}
+<section class="jumbotron not-found">
+    <img src="{{ site.baseurl | prepend: site.url }}/images/tastycat.png" alt="Tastycat">
+    <h1>404</h1>
+    <h4>This page was too tasty. Someone ate it.</h4>
+    <p>
+        <a class="button button-primary" href="{{ site.baseurl | prepend: site.url }}/">Home</a>
+        <a class="button" href="https://wavez.fm/~/tastycat">wavez.fm</a>
+        <a class="button" href="https://discord.tastycat.org">Discord</a>
+    </p>
+</section>
