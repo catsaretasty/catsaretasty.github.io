@@ -830,6 +830,71 @@ hr {
     margin-top: 5rem;
 }
 
+/* Recommendation line centered above the install method columns. */
+.tastyplug .install-intro {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Install method columns: the heading and action button are centered over each column's steps. */
+.tastyplug .install-method h5,
+.tastyplug .install-action {
+    text-align: center;
+}
+
+/* On wide screens, where the columns sit side by side, the action block has a fixed minimum
+   height, sized to hold a button plus a caption line, so the steps under each button start at
+   the same height. Stacked columns need no such space. */
+@media (min-width: 550px) {
+    .tastyplug .install-action {
+        min-height: 7rem;
+    }
+}
+
+/* Both install buttons share one width so they match whatever their labels. */
+.tastyplug .install-action .button {
+    min-width: 16rem;
+}
+
+/* Caption line under an install button. */
+.tastyplug .install-caption {
+    display: block;
+    margin-top: .4rem;
+    font-size: 1.3rem;
+    color: #888;
+}
+
+/* Bookmarklet button: the site button's size, shape and border width, with only a dashed
+   border and grab cursor marking it as something to drag to the bookmarks bar. */
+.tastyplug .button.bookmarklet {
+    border: 1px dashed #33C3F0;
+    background-color: rgba(51, 195, 240, .08);
+    color: #1EAEDB;
+    cursor: grab;
+}
+
+/* Hover and focus firm up the border without changing the button's size. */
+.tastyplug .button.bookmarklet:hover,
+.tastyplug .button.bookmarklet:focus {
+    border-style: solid;
+    border-color: #1EAEDB;
+    background-color: rgba(51, 195, 240, .16);
+    color: #1EAEDB;
+}
+
+/* Pressed state while the button is being picked up. */
+.tastyplug .button.bookmarklet:active {
+    cursor: grabbing;
+}
+
+/* Note shown under the bookmarklet button when it is clicked on this page; hidden until then. */
+.tastyplug .bookmarklet-note {
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    background-color: #f2dede;
+}
+
 /* 404 page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Tastycat logo, shrunk and tipped over. */

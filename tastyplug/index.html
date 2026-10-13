@@ -8,20 +8,51 @@ summary: "A wavez.fm extension by Tastycat."
 <section class="jumbotron">
     <h2>TastyPlug</h2>
     <p>A wavez.fm extension by Tastycat.</p>
-    <a class="button button-primary" href="{{ userscript_url }}">Install TastyPlug</a>
 </section>
 
 <div class="tastyplug">
 
-<h3 id="installing">Installing</h3>
-<ol>
-    <li>Install a userscript manager: <a href="https://violentmonkey.github.io/">Violentmonkey</a> or <a href="https://www.tampermonkey.net/">Tampermonkey</a>.</li>
-    <li>Open the <a href="{{ userscript_url }}">TastyPlug userscript</a> and confirm the install.</li>
-    <li>Open a wavez.fm room. The TastyPlug panel appears over the stage.</li>
-</ol>
+{% comment %}
+Two install methods side by side, using the stylesheet's grid: each takes half the row and they
+stack into one column on narrow screens. A centered line above the row recommends the userscript.
+Each column has a centered heading and action button above its steps. Notes that apply to both
+methods follow the row.
+{% endcomment %}
+<p id="installing" class="install-intro">Use the userscript for the best experience: it starts by itself, while the bookmarklet has to be clicked on each visit.</p>
+<div class="row install-methods">
+    <div class="six columns install-method">
+        <h5 id="userscript">Userscript</h5>
+        <p class="install-action"><a class="button button-primary" href="{{ userscript_url }}">Userscript</a></p>
+        <ol>
+            <li>Install a userscript manager: <a href="https://violentmonkey.github.io/">Violentmonkey</a> or <a href="https://www.tampermonkey.net/">Tampermonkey</a>.</li>
+            <li>Open the <a href="{{ userscript_url }}">TastyPlug userscript</a> and confirm the install.</li>
+            <li>Open a wavez.fm room. The TastyPlug panel appears over the stage.</li>
+        </ol>
+    </div>
+    <div class="six columns install-method">
+        <h5 id="bookmarklet">Bookmarklet</h5>
+        {% comment %}
+        Drag-to-bookmarks link. The href is the one-line contents of bookmarklet.txt from the
+        TastyPlug build, HTML-escaped for the attribute. It must match that file exactly; replace it
+        whenever the file changes. Clicking it on this page is caught by the script at the end of
+        the page, which shows the note below it instead.
+        {% endcomment %}
+        <p class="install-action"><a class="button bookmarklet" href="javascript:(()=>{var%20i=/^\/~\/[^/]+/;function%20o(){let%20t=document.createElement(&quot;script&quot;);t.id=&quot;tastyplug-bootstrap&quot;,t.src=`https://tastyplug.tastycat.org/bootstrap.js?t=${Date.now()}&amp;via=bookmarklet`,t.onload=()=>t.remove(),(document.head||document.documentElement).appendChild(t)}function%20a(){return%20i.test(location.pathname)}function%20r(){let%20t=window.navigation,e=0,n=()=>{if(!a())return;t?.removeEventListener(&quot;currententrychange&quot;,n),window.clearInterval(e),o()};if(t)t.addEventListener(&quot;currententrychange&quot;,n);else%20e=window.setInterval(n,1000)}if(a())o();else%20r();})();">TastyPlug</a><span class="install-caption">Drag to your bookmarks bar</span></p>
+        <p class="bookmarklet-note" role="status" hidden>This button is a bookmark. Drag it to your bookmarks bar, or right-click it and bookmark it.</p>
+        <ol>
+            <li>Drag the TastyPlug link to your bookmarks bar.</li>
+            <li>Open wavez.fm and click the bookmark. TastyPlug starts in the room you're in, or in the next room you enter.</li>
+        </ol>
+        <ul>
+            <li>Click it again whenever you open or reload wavez.</li>
+            <li>Mobile browsers are untested.</li>
+        </ul>
+    </div>
+</div>
+
 <p>TastyPlug updates itself; there is no need to reinstall.</p>
 <ul>
-    <li>TastyPlug runs on room pages. If you move into a room from another wavez page without a page load, reload the room once.</li>
+    <li>Use the userscript or the bookmarklet, not both.</li>
     <li>You must be signed in. As a guest, chat shows <code>Must be logged in to use tastyplug!</code> and TastyPlug waits until you sign in.</li>
 </ul>
 
@@ -130,3 +161,18 @@ stage. Only TastyPlug users see it.</p>
 {% assign build_year = site.time | date: '%Y' %}
 <p class="u-center">©2026{% if build_year != '2026' %}-{{ build_year }}{% endif %} Nodle. Based on the original TastyPlug for plug.dj by Olivier Houle (Fungus) and Chip (git).<br>
 Licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3 or later</a>.</p>
+
+<script type="text/javascript">
+    // Clicking the bookmarklet button on this page would run the bookmarklet here, where it has no
+    // room to start in. Cancel the click and reveal the note under the button instead. Dragging the
+    // button to the bookmarks bar is not a click, so it still saves the unchanged link.
+    (function () {
+        var link = document.querySelector('.tastyplug a.bookmarklet');
+        var note = document.querySelector('.tastyplug .bookmarklet-note');
+        if (!link || !note) return;
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            note.hidden = false;
+        });
+    })();
+</script>
