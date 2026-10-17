@@ -89,5 +89,5 @@ Bio text here.
 ```
 
 ## Tastybot
-`_data/tastybot-commands.json` drives the `/tastybot` page. It is generated from the TastyBot command registry;
+`_data/tastybot-commands.json` drives the `/tastybot` page. It is generated from the Tastybot command registry;
 replace the whole file with a newly generated one rather than editing it by hand.

@@ -292,7 +292,7 @@ try {
     }
 
     # ---------------------------------------------------------------- Command data
-    # The TastyBot command list must be valid JSON for the /tastybot page to build from it.
+    # The Tastybot command list must be valid JSON for the /tastybot page to build from it.
     $commandsFile = Join-Path $root '_data\tastybot-commands.json'
     try {
         Get-Content -LiteralPath $commandsFile -Raw | ConvertFrom-Json | Out-Null
