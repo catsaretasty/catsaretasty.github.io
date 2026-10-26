@@ -167,7 +167,7 @@
 			"aliases": [
 				"opc"
 			],
-			"args": "&lt;link | cid &lt;format&gt; &lt;id&gt;&gt;",
+			"args": "&lt;link|cid &lt;format&gt; &lt;id&gt;&gt;",
 			"desc": "Checks if the specified media is Overplayed or not."
 		},
 		{
@@ -242,7 +242,7 @@
 			"aliases": [
 				"wlb"
 			],
-			"args": "[find | divorce | move | &lt;user&gt;]",
+			"args": "[find|divorce|move|&lt;user&gt;]",
 			"desc": "Manages your own Wait List Buddy status. Can look up your Wait List Buddy, divorce them, or move you to them in the WL."
 		}
 	],
