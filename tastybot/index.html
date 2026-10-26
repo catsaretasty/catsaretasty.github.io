@@ -29,7 +29,11 @@ title: Tastybot
                 <span class="command-aliases">{% for alias in command.aliases %}!{{ alias | escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
                 {% endif %}
             </td>
-            <td>{{command.args}}</td>
+            {% comment %}
+            Arguments. Every "|" gets a thin space on each side, kept on one line with them, and is
+            followed by a line break opportunity so long choice lists wrap between choices.
+            {% endcomment %}
+            <td>{{ command.args | replace: "|", '<span class="args-sep">&#8201;|&#8201;</span><wbr>' }}</td>
             <td>{{command.desc}}</td>
         </tr>
         {% endfor %}

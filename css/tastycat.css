@@ -740,12 +740,22 @@ hr {
     font-size: 0.9em;
 }
 
+/* Arguments cell: a fixed-width column, so every row's arguments line up and the description
+   beside them keeps its place. Long choice lists wrap at the break points after each "|", and
+   anywhere as a fallback, instead of widening the column. */
 .commands td:nth-of-type(2) {
-    max-width: 20rem
+    width: 20rem;
+    max-width: 20rem;
+    overflow-wrap: anywhere;
 }
 
 .commands td:nth-of-type(3) {
     max-width: 30rem
+}
+
+/* "|" between argument choices: never split from the thin spaces around it. */
+.commands .args-sep {
+    white-space: nowrap;
 }
 
 @media only screen and (max-width: 1000px),
@@ -778,7 +788,9 @@ hr {
         border-bottom: 1px solid #bbb;
     }
 
+    /* Stacked cells take the full row width, so the fixed column widths no longer apply. */
     .commands td:nth-of-type(1), .commands td:nth-of-type(2), .commands td:nth-of-type(3) {
+        width: auto;
         max-width: none;
     }
 
@@ -885,6 +897,56 @@ hr {
 /* Pressed state while the button is being picked up. */
 .tastyplug .button.bookmarklet:active {
     cursor: grabbing;
+}
+
+/* Screenshots: centered, at the size set on the image up to the column width, with a small grey caption. */
+.tastyplug figure {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.tastyplug figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.tastyplug figcaption {
+    margin-top: .4rem;
+    font-size: 1.3rem;
+    color: #888;
+}
+
+/* Icon shown inline in running text: text height, sitting on the text's baseline, in grey. */
+.tastyplug .inline-icon {
+    color: #888;
+}
+
+.tastyplug .inline-icon svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.15em;
+}
+
+/* Section and group headings start below any floated screenshot from the content before them. */
+.tastyplug h3,
+.tastyplug h5 {
+    clear: both;
+}
+
+/* On wide screens a screenshot floats right and the content after it wraps around it. A table
+   straight after one shrinks to its content so it fits beside the screenshot instead of dropping
+   below it. On narrow screens the screenshot stays centered above the content. */
+@media (min-width: 550px) {
+    .tastyplug .shot-right {
+        float: right;
+        margin: 0 0 1.5rem 2.5rem;
+    }
+
+    .tastyplug .shot-right + table {
+        width: auto;
+    }
 }
 
 /* Note shown under the bookmarklet button when it is clicked on this page; hidden until then. */

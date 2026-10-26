@@ -56,6 +56,14 @@ methods follow the row.
 </ul>
 
 <h3 id="panel">The panel</h3>
+{% comment %}
+Screenshots float right so the content after them wraps around them; they stack on narrow
+screens. Each sits just before the content it illustrates. Screenshots are taken at 1x and shown
+at their own pixel size.
+{% endcomment %}
+<figure class="shot-right">
+    <img src="/images/tastyplug/panel.png" width="181" height="404" alt="TastyPlug panel with the Auto, Alerts, User Interface and Staff sections, a cog beside each feature that has settings, and Reset and the version number in the footer.">
+</figure>
 {% comment %} Two-column action table; the plain table styles from the stylesheet apply. {% endcomment %}
 <table class="u-full-width">
     <thead>
@@ -72,7 +80,7 @@ methods follow the row.
 <p>Reset puts every setting back to its default, including the panel position, and keeps your Chat Mentions word list.</p>
 
 <h3 id="features">Features</h3>
-<p>Features are grouped under <b>Auto</b>, <b>Alerts</b> and <b>Staff</b>. Everything starts switched off.</p>
+<p>Features are grouped under <b>Auto</b>, <b>Alerts</b>, <b>User Interface</b> and <b>Staff</b>. Everything starts switched off.</p>
 
 <h5>Auto</h5>
 <p><b>Auto Woot</b> - Woots every track for you, after a random delay of 1 to 10 seconds. It does not woot your own
@@ -87,16 +95,24 @@ locked or full.</p>
     <li><b>Spot</b> (1-99, default 3): the queue spot at which to alert.</li>
     <li><b>Chime</b> (default on): play the chime with the alert.</li>
 </ul>
-<p>With <b>History Alert</b> also on, Booth Alert checks your next song first. In the Tastycat room the check is
-Tastybot's OP check:<br>
-<code>[Booth Alert] It's almost your turn to DJ! Next song: Not OP | All Time: 3 | Last Played: 5 days ago</code><br>
-In other rooms it is wavez's own recently played check:<br>
-<code>[Booth Alert] It's almost your turn to DJ! Next song: Recently played | Last Played: 45 minutes ago</code></p>
 
-<p><b>History Alert</b> - Checks songs against the room's play history (the last 80 plays). With Booth Alert on, it
-adds your next song's history to the alert. For staff outside the Tastycat room, it also chimes when a new song
-starts that is in the history:<br>
-<code>This song is on the history! (played N songs ago)</code></p>
+<figure class="shot-right">
+    <img src="/images/tastyplug/played-check.png" width="179" height="108" alt="Played Check settings open in the TastyPlug panel: Spot set to 3 with the link icon, Chime on, Recheck on change off.">
+    <figcaption>Played Check settings</figcaption>
+</figure>
+<p><b>Played Check</b> - Checks your next song when you reach your chosen queue spot. In the Tastycat room the check
+is Tastybot's OP check:<br>
+<code>[Played Check] Next song: Not OP | All Time: 3 | Last Played: 5 days ago</code><br>
+In other rooms it is wavez's own recently played check:<br>
+<code>[Played Check] Next song: Recently played | Last Played: 2h15 ago</code><br>
+<code>[Played Check] Next song: Not in history!</code></p>
+<ul>
+    <li><b>Spot</b> (1-99, default 3): the queue spot at which to check.</li>
+    <li><b>Chime</b> (default on): play the chime when the song is OP or recently played.</li>
+    <li><b>Recheck on change</b> (default off): check again whenever your next song changes.</li>
+</ul>
+{% comment %} Inline copy of TastyPlug's link icon; screen readers read it by its label. {% endcomment %}
+<p>Click <span class="inline-icon" role="img" aria-label="the link icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 15l6 -6"/><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/></svg></span> beside Spot to keep Booth Alert and Played Check on the same spot.</p>
 
 <p><b>Chat Mentions</b> - Plays the chime when someone else's message contains one of your words or phrases.
 Matching ignores case and punctuation. Words must be at least 3 letters.</p>
@@ -108,13 +124,19 @@ Matching ignores case and punctuation. Words must be at least 3 letters.</p>
     <li><b>Level 1s</b> (staff only): level 1 users, shown as <code>[Lvl 1] &lt;name&gt; joined the room</code>.</li>
 </ul>
 
+<h5>User Interface</h5>
+<figure class="shot-right">
+    <img src="/images/tastyplug/command-hints.png" width="399" height="168" alt="Command suggestions with &quot;/opcheck &quot; typed in the message box, showing /opcheck with the Tastycat icon, its arguments [playlist | link] marked as the current argument, and the description &quot;Checks whether a song is overplayed.&quot;">
+    <figcaption>Better Command Hints</figcaption>
+</figure>
+<p><b>Better Command Hints</b> - Shows each command's arguments beside it as you type. Tab completes the command
+and its arguments.</p>
+
 <h5>Staff</h5>
+<p><b>History Alert</b> - Chimes when a new song starts that is in the room's play history (the last 80 plays):<br>
+<code>This song is on the history! (played N songs ago)</code></p>
 <p><b>Meh Tracker</b> - Posts <code>&lt;name&gt; meh'd the song!</code> the first time each person mehs the current
 track.</p>
-
-<h5>Always on</h5>
-<p><b>TastyPlug chat lines</b> - TastyPlug's alerts and results appear in the room chat as lines from TastyPlug.
-Only you see them.</p>
 
 <h3 id="commands">Slash commands</h3>
 <p>Type these in the room's message box. Nothing is posted to the room. Tastycat room only.</p>
@@ -125,19 +147,10 @@ Only you see them.</p>
     <tbody>
         <tr><td><code>/opcheck playlist</code></td><td>The next song in your active playlist</td></tr>
         <tr><td><code>/opcheck &lt;link&gt;</code></td><td>A YouTube or SoundCloud link</td></tr>
-        <tr><td><code>/opcheck</code></td><td>The song playing now; bouncer and above</td></tr>
     </tbody>
 </table>
 <p>Tastybot answers privately:<br>
 <code>[!opcheck] All Time: 3 | Month: 3 | Week: 1 | Last Played: 5 days ago | Not OP!</code></p>
-
-<h3 id="ranks">Rooms and ranks</h3>
-<ul>
-    <li>Most features work in any wavez room.</li>
-    <li>Our custom slash commands currently only work in the Tastycat room.</li>
-    <li>Staff means bouncer and above. Resident DJs and VIPs are not staff.</li>
-    <li>Staff only: Meh Tracker, Join Notifs' Level 1s, and History Alert's new-song alert.</li>
-</ul>
 
 <h3 id="privacy">Privacy</h3>
 <ul>
